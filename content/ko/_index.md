@@ -38,7 +38,7 @@ sections:
     design:
       columns: '1'
   - block: collection
-    id: papers
+    id: ko/papers
     content:
       title: Featured Publications
       filters:
