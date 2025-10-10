@@ -6,11 +6,8 @@ title: 이혜원
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Alex
-last_name: Johnson
-
-# Pronouns (optional)
-pronouns: he/him
+first_name: 이
+last_name: 혜원
 
 # Status emoji
 status:
@@ -166,4 +163,7 @@ awards:
       Recognized for contributions to scaling laws in deep learning.
 ---
 
-Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.
+안녕하세요. 전북대학교 컴퓨터인공지능학부에 재학중인 이혜원입니다.
+저는 웹 인터랙션과 디자인에 매력을 느껴 프론트엔드 개발자를 꿈꾸고 있습니다.  
+React, HTML, CSS, UX에 대해 꾸준히 공부중입니다. 
+사용자에게 편리함과 깔끔함을 제공하면서도 신선하고 감각적인 디자인의 웹을 만드는게 목표입니다!@.@

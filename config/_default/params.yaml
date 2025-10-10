@@ -34,6 +34,7 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
+      image: '/media/home.png'
       text: '이혜원'
 
 # Site footer
