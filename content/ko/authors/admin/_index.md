@@ -52,7 +52,7 @@ education:
   - area: 컴퓨터인공지능학부 재학중
     institution: 전북대학교
     date_start: 2023-03-01
-    date_end: present
+    date_end: ''
     summary: |
 
       현재 전북대학교 컴퓨터인공지능학부 3학년으로 재학중입니다.
