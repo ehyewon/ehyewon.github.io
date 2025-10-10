@@ -9,10 +9,6 @@ name_pronunciation: ''
 first_name: 이
 last_name: 혜원
 
-# Status emoji
-status:
-  icon: 🚀
-
 # Is this the primary user of the site?
 superuser: true
 
@@ -20,62 +16,53 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: 미래의 웹 개발자
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: JBNU
+    url: https://www.jbnu.ac.kr
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
-    label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
+    url: 'mailto:leehyewon04@naver.com'
+    label: 메일
   - icon: brands/github
-    url: https://github.com/alexjohnsonai
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnsonai/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=alexjohnson
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://github.com/ehyewon
+    label: 깃허브
+  - icon: instagram
+    url: https://instagram.com/_hywoni
+    label: 인스타그램
+  - icon: fas
+    url: https://m.blog.naver.com/2eehyeni_
+    label: 블로그
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - 데이터 베이스
+  - 프론트앤드
+  - 빅데이터
+  - AI
 
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
-    date_start: 2015-09-01
-    date_end: 2019-06-30
+  - area: 컴퓨터인공지능학부 재학중
+    institution: 전북대학교
+    date_start: 2023-03-01
+    date_end: 현재
     summary: |
-      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
+
+      현재 전북대학교 컴퓨터인공지능학부 3학년으로 재학중입니다.
+  - area: 광주숭일고등학교 졸업
+    institution:
+    date_start: 2020-03-01
+    date_end: 2023-02-01
+    summary: |
+
+      2023년 광주숭일고등학교를 졸업하였습니다.
     button:
-      text: 'Read Thesis'
-      url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
-    date_start: 2013-09-01
-    date_end: 2015-05-31
-    summary: |
-      GPA: 4.0/4.0
-
-      Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
-    date_start: 2009-09-01
-    date_end: 2013-05-31
-    summary: |
-      GPA: 3.9/4.0
-
-      Minored in Mathematics. President of AI Club.
+      text: '광주숭일고등학교'
+      url: 'http://soongil.gen.hs.kr/'
 
 work:
   - position: Senior AI Research Scientist

@@ -7,21 +7,21 @@ main:
   - name: 내 정보
     url: /
     weight: 10
-  - name: Papers
+  - name: 관심사
     url: /#papers
     weight: 11
-  - name: Talks
+  - name: 전북대
     url: /#talks
     weight: 12
-  - name: News
+  - name: 뉴스
     url: /#news
     weight: 13
-  - name: Experience
+  - name: 경력
     url: experience/
     weight: 20
-  - name: Projects
+  - name: 프로젝트
     url: projects/
     weight: 30
-  - name: Courses
+  - name: 연락
     url: courses/
     weight: 40
