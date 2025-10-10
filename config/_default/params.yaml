@@ -62,10 +62,12 @@ features:
     enable: false
   privacy_pack:
     enable: false
-    map:
-      provider: 'google'
-      api_key: ''
-      zoom: 15
-    content:
-     coordinates: google
-     latitude: 
+  map:
+    coordinates: 'mapnik'
+    api_key: ''
+    zoom: 15
+  content:
+    coordinates:
+      latitude: 35.8465
+      longitude: 127.1293
+
