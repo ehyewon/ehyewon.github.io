@@ -35,7 +35,6 @@ sections:
       subtitle: ''
       text: |-
         안녕하세요. 웹 개발자를 희망하는 이헤원입니다. 이 공간은 저를 소개하는 공간입니다. 해당 사이트에서는 저의 기본적인 개인정보 외에도 제가 했던 포로젝트와 최근 트렌드 소식까지 만나보실 수 있습니다. 편하게 둘러보세요!
-
     design:
       columns: '1'
   - block: collection
@@ -74,10 +73,13 @@ sections:
       title: Recent News
       subtitle: ''
       text: ''
+      # Page type to display. E.g. post, talk, publication...
+      # Choose how many pages you would like to display (0 = all pages)
       count: 5
+      # Filter on criteria
       filters:
         folders: 
-          - ko/blog        # ✅ 올바른 경로
+          - /ko/blog
         author: ''
         category: ''
         tag: ''
@@ -85,10 +87,14 @@ sections:
         exclude_future: false
         exclude_past: false
         publication_type: ''
+      # Choose how many pages you would like to offset by
       offset: 0
+      # Page order: descending (desc) or ascending (asc) date.
       order: desc
     design:
+      # Choose a layout view
       view: card
+      # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
   - block: cta-card
