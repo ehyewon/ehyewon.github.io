@@ -37,9 +37,7 @@ header:
     logo:
       image: '/uploads/home.png'
       image_dark: '/uploads/home_dark.png'
-      alt: '이혜원 로고'
-      text: ''
-      link: '/'
+      text: 'Home'
 
 
 # Site footer
