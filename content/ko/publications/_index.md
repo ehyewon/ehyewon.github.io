@@ -1,5 +1,6 @@
 ---
 title: Publications
+lang: ko
 cms_exclude: true
 
 # View.

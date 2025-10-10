@@ -1,5 +1,6 @@
 ---
 title: Publications
+lang: en
 cms_exclude: true
 
 # View.
