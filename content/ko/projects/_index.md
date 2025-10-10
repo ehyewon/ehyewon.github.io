@@ -1,5 +1,5 @@
 ---
-title: '프로젝트'
+title: 'projects'
 cascade:
   language: ko
 date: 2024-05-19
@@ -13,8 +13,8 @@ design:
 sections:
   - block: collection
     content:
-      title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      title: 프로젝트
+      text: 저의 프로젝트 입니다.
       filters:
         folders:
           - ko/projects
