@@ -33,12 +33,14 @@ header:
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
+    show_title: false
     logo:
       image: '/uploads/home.png'
       image_dark: '/uploads/home_dark.png'
       alt: '이혜원 로고'
-      text: '이혜원'
+      text: ''
       link: '/'
+
 
 # Site footer
 footer:
