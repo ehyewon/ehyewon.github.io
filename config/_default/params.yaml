@@ -35,7 +35,10 @@ header:
     show_theme_chooser: true
     logo:
       image: '/media/home.png'
-      text: '이혜원'
+      image_dark: '/media/home_dark.png'
+      alt: '이혜원 로고'
+      text: ''
+
 
 # Site footer
 footer:
