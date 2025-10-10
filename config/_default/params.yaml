@@ -33,12 +33,13 @@ header:
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
-    show_title: false
     logo:
-      image: '/uploads/home.png'
-      image_dark: '/uploads/home_dark.png'
-      text: 'Home'
-
+      appearance:
+        mode: light
+        color: dark
+      appearance:
+        mode : dark
+        color: light
 
 # Site footer
 footer:
@@ -61,3 +62,10 @@ features:
     enable: false
   privacy_pack:
     enable: false
+    map:
+      provider: 'google'
+      api_key: ''
+      zoom: 15
+    content:
+     coordinates: google
+     latitude: 

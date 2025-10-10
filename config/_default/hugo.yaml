@@ -23,27 +23,12 @@ languages:
     languageName: 한국어
     weight: 1
     contentDir: content/ko
-    params:
-      navbar:
-        logo:
-          image: '/uploads/home.png'
-          image_dark: '/uploads/home_dark.png'
-          alt: '홈 로고'
-          link: '/ko/'
 
   en:
     languageCode: en-us
     languageName: English
     weight: 2
     contentDir: content/en
-    params:
-      navbar:
-        logo:
-          image: '/uploads/home.png'
-          image_dark: '/uploads/home_dark.png'
-          alt: 'Home logo'
-          link: '/en/'
-
 
 
 
