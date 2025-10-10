@@ -45,6 +45,7 @@ sections:
         folders:
           - ko/publications
         featured_only: true
+
     design:
       view: article-grid
       columns: 2
@@ -56,6 +57,7 @@ sections:
         folders:
           - /ko/publications
         exclude_featured: false
+
     design:
       view: citation
   - block: collection
@@ -65,6 +67,7 @@ sections:
       filters:
         folders:
           - /ko/events
+          
     design:
       view: card
   - block: collection
