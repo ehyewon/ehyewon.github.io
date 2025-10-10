@@ -11,6 +11,7 @@ tags:
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 type: post
+language: ko
 draft: false
 ---
 
