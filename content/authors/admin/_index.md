@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Alex Johnson
+title: 이혜원
 
 # Name pronunciation (optional)
 name_pronunciation: ''
