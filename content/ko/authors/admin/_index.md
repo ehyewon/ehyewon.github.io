@@ -29,14 +29,17 @@ profiles:
   - icon: at-symbol
     url: 'mailto:leehyewon04@naver.com'
     label: 메일
-  - icon: brand/github
-    icon_pack: fab
+    
+  - icon: brands/github
+    icon_pack: fontawesome
     url: 'https://github.com/ehyewon'
     label: 깃허브
-  - icon: instagram
-    icon_pack: fab
+
+  - icon: brands/instagram
+    icon_pack: fontawesome
     url: 'https://instagram.com/_hywoni'
     label: 인스타그램
+
   - icon: rss
     icon_pack: fas
     url: 'https://m.blog.naver.com/2eehyni_'
