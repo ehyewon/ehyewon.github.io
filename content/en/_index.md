@@ -58,7 +58,7 @@ sections:
       text: ''
       filters:
         folders:
-          - en/publications
+          - /en/publications
         exclude_featured: false
     design:
       view: citation
@@ -68,7 +68,7 @@ sections:
       title: Recent & Upcoming Talks
       filters:
         folders:
-          - en/events
+          - /en/events
     design:
       view: card
   - block: collection
@@ -84,7 +84,7 @@ sections:
       # Filter on criteria
       filters:
         folders:
-          - en/blog
+          - /en/blog
         author: ''
         category: ''
         tag: ''
