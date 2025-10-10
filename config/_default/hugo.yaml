@@ -6,16 +6,29 @@
 # Website name
 title: Hugo Academic CV Theme
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: 'https://ehyewon.github.io/'
 
 ############################
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
+defaultContentLanguage: ko
+hasCJKLanguage: true
+defaultContentLanguageInSubdir: true
 removePathAccents: true
+
+language:
+  ko:
+    languageCode: ko-kr
+    languageName: 한국어
+    contentDir: content/ko
+    weight: 1
+  en:
+    languageCode: en-us
+    languageName: English
+    contentDir: content/en
+    weight: 1
+
 
 ############################
 ## ADVANCED

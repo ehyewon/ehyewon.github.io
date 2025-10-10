@@ -13,9 +13,8 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    org_name: '전북대'
+    description: '이혜원의 홈페이지'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -23,7 +22,7 @@ marketing:
     fathom: ''
     pirsch: ''
   verification:
-    google: ''
+    google: 'qQbC9TrkpkxsoszOWik29E_SPMHf9oiv75k61mSh3ok'
     baidu: ''
 
 # Site header
@@ -35,7 +34,7 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: 'Your Name'
+      text: '이혜원'
 
 # Site footer
 footer:
