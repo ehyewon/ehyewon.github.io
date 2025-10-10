@@ -83,6 +83,8 @@ sections:
       count: 5
       # Filter on criteria
       filters:
+        folders:
+          - en/blog
         author: ''
         category: ''
         tag: ''
