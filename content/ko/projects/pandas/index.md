@@ -1,8 +1,7 @@
 ---
 title: Pandas
 date: 2023-10-26
-cascade:
-  language: ko
+url: /content/ko/projects/pandas/
 links:
   - type: site
     url: https://github.com/pandas-dev/pandas
