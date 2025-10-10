@@ -1,6 +1,7 @@
 ---
 title: '프로젝트'
-lang: ko
+cascade:
+  language: ko
 date: 2024-05-19
 type: landing
 
@@ -16,7 +17,7 @@ sections:
       text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
       filters:
         folders:
-          - projects
+          - ko/projects
     design:
       view: article-grid
       fill_image: false

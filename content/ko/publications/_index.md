@@ -1,6 +1,7 @@
 ---
 title: Publications
-lang: ko
+cascade:
+  language: ko
 cms_exclude: true
 
 # View.

@@ -1,6 +1,7 @@
 ---
 title: Publications
-lang: en
+cascade:
+  language: en
 cms_exclude: true
 
 # View.
