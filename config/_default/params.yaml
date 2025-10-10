@@ -34,8 +34,8 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-       image: '/uploads/home.png'
-       image_dark: '/uploads/home_dark.png'
+      image: '/uploads/home.png'
+      image_dark: '/uploads/home_dark.png'
       alt: '이혜원 로고'
       text: ''
 

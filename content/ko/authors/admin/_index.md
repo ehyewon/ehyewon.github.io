@@ -33,7 +33,7 @@ profiles:
     icon_pack: fab
     url: 'https://github.com/ehyewon'
     label: 깃허브
-  - icon: brand/instagram
+  - icon: instagram
     icon_pack: fab
     url: 'https://instagram.com/_hywoni'
     label: 인스타그램
