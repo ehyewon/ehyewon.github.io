@@ -47,7 +47,7 @@ sections:
       title: Featured Publications
       filters:
         folders:
-          - publications
+          - ko/publications
         featured_only: true
     design:
       view: article-grid
@@ -58,7 +58,7 @@ sections:
       text: ''
       filters:
         folders:
-          - publications
+          - ko/publications
         exclude_featured: false
     design:
       view: citation
@@ -68,7 +68,7 @@ sections:
       title: Recent & Upcoming Talks
       filters:
         folders:
-          - events
+          - ko/events
     design:
       view: card
   - block: collection
