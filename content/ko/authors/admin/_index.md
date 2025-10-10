@@ -39,7 +39,7 @@ profiles:
     label: 인스타그램
   - icon: rss
     icon_pack: fas
-    url: 'https://m.blog.naver.com/2eehyeni_'
+    url: 'https://m.blog.naver.com/2eehyni_'
     label: 블로그
 
 interests:
