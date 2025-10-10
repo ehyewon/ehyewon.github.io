@@ -34,12 +34,9 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      appearance:
-        mode: light
-        color: dark
-      appearance:
-        mode : dark
-        color: light
+      image: '/uploads/icon.png'
+      image_dark: '/uploads/icon.png'
+      alt: '이혜원 로고'
 
 # Site footer
 footer:
