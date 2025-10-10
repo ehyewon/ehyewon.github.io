@@ -15,19 +15,21 @@ baseURL: 'https://ehyewon.github.io/'
 defaultContentLanguage: ko
 hasCJKLanguage: true
 defaultContentLanguageInSubdir: true
-removePathAccents: true
+removePathAccents: false
 
-language:
+languages:
   ko:
     languageCode: ko-kr
     languageName: 한국어
-    contentDir: content/ko
     weight: 1
+    contentDir: content/ko
+
   en:
     languageCode: en-us
     languageName: English
-    contentDir: content/en
     weight: 2
+    contentDir: content/en
+
 
 
 ############################
