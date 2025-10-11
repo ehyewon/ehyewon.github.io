@@ -10,10 +10,10 @@ main:
   - name: 관심사
     url: /#papers
     weight: 11
-  - name: 전북대
+  - name: 뉴스
     url: /#talks
     weight: 12
-  - name: 뉴스
+  - name: 전북대
     url: /#news
     weight: 13
   - name: 경력

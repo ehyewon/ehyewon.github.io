@@ -13,22 +13,22 @@ sections:
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-      text: ''
-      # Show a call-to-action button under your biography? (optional)
+      text: ""
       button:
-        text: Download CV
+        text: 이력서 다운받기
         url: uploads/resume.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
     design:
-      # Apply a gradient background
-      css_class: hbx-bg-gradient
+      css_class: dark
+      backgroud:
+        color: black
+        image:
+          filename: #이미지 나중에 추가하기 stacked-peaks.svg
+
       # Avatar customization
       avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
+        size: medium
+        shape: circle
+
   - block: markdown
     content:
       title: '📚 Introduce'
@@ -37,52 +37,53 @@ sections:
         안녕하세요. 웹 개발자를 희망하는 이헤원입니다. 이 공간은 저를 소개하는 공간입니다. 해당 사이트에서는 저의 기본적인 개인정보 외에도 제가 했던 포로젝트와 최근 트렌드 소식까지 만나보실 수 있습니다. 편하게 둘러보세요!
     design:
       columns: '1'
-  - block: collection
-    id: ko/papers
+
+  #슬라이더 블록
+  - block: custom_slider1
     content:
-      title: Featured Publications
+      dir: "" 
+      height: "" 
+      width: "" 
+      webp: 
+      resize:  
+      command: "" 
+      option: "" 
+      zoomable: 
+      slides:
+  - block: collection
+    id: papers
+    content:
+      title: 관심사
       filters:
         folders:
-          - ko/publications
-        featured_only: true
-
+          - interest
     design:
-      view: article-grid
-      columns: 2
+      view: article-grid 
+      columns: 3
+
   - block: collection
     content:
-      title: Recent Publications
+      title: 뉴스
       text: ''
       filters:
         folders:
-          - /ko/publications
-        exclude_featured: false
-
+          - news      
     design:
-      view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - /ko/events
+      view: article-grid
+      columns: 4
           
     design:
       view: card
   - block: collection
     id: news
     content:
-      title: Recent News
+      title: 전북대
       subtitle: ''
       text: ''
-      # Page type to display. E.g. post, talk, publication...
-      # Choose how many pages you would like to display (0 = all pages)
       count: 5
-      # Filter on criteria
       filters:
         folders: 
-          - /ko/blog
+          - jbnu
         author: ''
         category: ''
         tag: ''

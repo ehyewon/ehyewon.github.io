@@ -7,13 +7,14 @@
 appearance:
   mode: system
   color: indigo
+  favicon: icon.png
 
 # SEO
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: '전북대'
+    org_name: '전북대학교'
     description: '이혜원의 홈페이지'
   analytics:
     google_analytics: ''
@@ -34,10 +35,8 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      image: '/uploads/logo.png'
-      image_dark: '/uploads/logo.png'
-      alt: '이혜원 로고'
       text: 'Home'
+      filename: 'logo.png'
 
 # Site footer
 footer:

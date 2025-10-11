@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name
-title: 이혜원
+title: 전북대 이혜원
 # Website URL
 baseURL: 'https://ehyewon.github.io/'
 
@@ -15,7 +15,7 @@ baseURL: 'https://ehyewon.github.io/'
 defaultContentLanguage: ko
 hasCJKLanguage: true
 defaultContentLanguageInSubdir: true
-removePathAccents: false
+removePathAccents: true
 
 languages:
   ko:
@@ -23,12 +23,14 @@ languages:
     languageName: 한국어
     weight: 1
     contentDir: content/ko
+    title: 전북대 | 이혜원
 
   en:
     languageCode: en-us
     languageName: English
     weight: 2
     contentDir: content/en
+    title: JBNU | LeeHyeWon
 
 
 

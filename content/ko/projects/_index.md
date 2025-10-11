@@ -1,5 +1,5 @@
 ---
-title: 'projects'
+title: '프로젝트'
 cascade:
   language: ko
 date: 2024-05-19
