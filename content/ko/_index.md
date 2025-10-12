@@ -45,56 +45,70 @@ sections:
   # 🎞 이미지 슬라이더 추가
 sections:
 
-  sections:
-  - content:
-      html: '{{ partial "hbx/blocks/custom_slider/block.html" . }}'
-
+  - block: slider
     content:
       slides:
-      - title: 프론트엔드
-        content: React와 Next.js로 인터랙티브한 웹 경험을 만듭니다.
+      - title: 데이터베이스
+        content: 데이터베이스를 공부하고 있습니다
         align: center
         background:
           image:
             filename: slide1.jpg
             filters:
-              brightness: 0.45
+              brightness: 0.4
           position: center
           color: '#000'
 
-      - title: 빅데이터
-        content: Python, Pandas, SQL로 데이터를 시각화하고 인사이트를 얻습니다.
+      - title: 웹 서비스 설계
+        content: 실용적이고 감각적인 웹 디자인을 추구합니다
         align: center
         background:
           image:
             filename: slide2.jpg
             filters:
-              brightness: 0.45
+              brightness: 0.4
           position: center
           color: '#000'
 
-      - title: 데이터베이스
-        content: MySQL과 MongoDB로 효율적인 데이터 구조를 설계합니다.
+      - title: Travel
+        content: 여행을 좋아하는
         align: center
         background:
           image:
-            filename: slide3.jpg
+            filename: fukuoka.jpg
             filters:
-              brightness: 0.45
+              brightness: 0.4
           position: center
           color: '#000'
 
-      - title: AI & Web
-        content: 인공지능 모델을 웹 서비스로 구현하며 새로운 가치를 창출합니다.
+      - title: Front-end
+        content: 프론트 엔드 개발 지망 학부생
         align: center
         background:
           image:
-            filename: slide4.jpg
+            filename: coding.jpg
             filters:
-              brightness: 0.45
+              brightness: 0.4
           position: center
           color: '#000'
 
+
+      - title: 이가은
+        content: 이가은에 대해 더 알아보기
+        align: center
+        background:
+          image:
+            filename: avatar.jpg
+            filters:
+              brightness: 0.4
+          position: center
+          color: '#000'
+        link:
+          icon: user
+          icon_pack: fas
+          text: Click me
+          text-color: '#000'
+          url: contact
 
   - block: collection
     id: papers
