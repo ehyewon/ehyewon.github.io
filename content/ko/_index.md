@@ -42,10 +42,64 @@ sections:
     design:
       columns: '1'
 
-sections:
-  - content:
-      html: '{{ partial "hbx/slide.html" . }}'
 
+        # 🎞 메인 슬라이더 블록
+  - block: slide
+    content:
+      dir: "" 
+      height: "420px"
+      width: "100%"
+      webp: false
+      resize:  
+      command: "" 
+      option: "" 
+      zoomable: false
+      slides:
+        - title: "프론트엔드"
+          content: "React와 Next.js로 인터랙티브한 웹 경험을 만듭니다."
+          align: "center"
+          background:
+            image:
+              filename: "slide1.jpg"
+              filters:
+                brightness: 1.0
+            position: "center"
+            color: "#000"
+        - title: "빅데이터"
+          content: "Python, Pandas, SQL로 인사이트를 시각화합니다."
+          align: "center"
+          background:
+            image:
+              filename: "slide2.jpg"
+              filters:
+                brightness: 1.0
+            position: "center"
+            color: "#000"
+        - title: "데이터베이스"
+          content: "MySQL과 MongoDB로 효율적인 데이터 구조를 설계합니다."
+          align: "center"
+          background:
+            image:
+              filename: "slide3.jpg"
+              filters:
+                brightness: 1.0
+            position: "center"
+            color: "#000"
+        - title: "AI & Web"
+          content: "인공지능 모델을 웹 서비스로 구현합니다."
+          align: "center"
+          background:
+            image:
+              filename: "slide4.jpg"
+              filters:
+                brightness: 1.0
+            position: "center"
+            color: "#000"
+    design:
+      slide_height: "420px"
+      slide_width: "100%"
+      loop: true
+      interval: 4000
 
 
   - block: collection
