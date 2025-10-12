@@ -11,7 +11,7 @@ main:
     url: /#papers
     weight: 11
   - name: 뉴스
-    url: /#talks
+    url: /#news
     weight: 12
   - name: 전북대
     url: /#blog
