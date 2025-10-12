@@ -14,7 +14,7 @@ main:
     url: /#talks
     weight: 12
   - name: 전북대
-    url: /#news
+    url: /#blog
     weight: 13
   - name: 경력
     url: experience/
@@ -23,5 +23,5 @@ main:
     url: projects/
     weight: 30
   - name: 연락
-    url: courses/
+    url: contact/
     weight: 40
