@@ -23,6 +23,11 @@ sections:
         color: black
         image:
           filename: stacked-peaks.svg
+          filters:
+            brightness: 1.0
+          size: cover
+          position: center
+          parallax: false
 
       # Avatar customization
       avatar:
