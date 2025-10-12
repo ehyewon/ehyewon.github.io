@@ -43,9 +43,18 @@ sections:
       columns: '1'
 
 
-  - content:
-      html: '{{ partial "hbx/slide.html" . }}'
-
+  # 슬라이더 블록 (shortcode 사용)
+  - block: custom_slider
+    content:
+      dir: "" 
+      height: "" 
+      width: "" 
+      webp: 
+      resize:  
+      command: "" 
+      option: "" 
+      zoomable: 
+      slides:
 
   - block: collection
     id: papers
