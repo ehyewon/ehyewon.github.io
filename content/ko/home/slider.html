@@ -1,9 +1,11 @@
 ---
 title: "슬라이더"
 type: page
-layout: blank          # ✅ HugoBlox 기본 blank 레이아웃 (사이드바 없음)
-show_sidebar: false    # ✅ 사이드바/TOC 완전 비활성화
+layout: blank          # ✅ blank로 바꿔서 sidebar, toc 호출 완전 차단
+show_sidebar: false
 show_toc: false
+outputs:
+  - html
 ---
 
 <!-- =============================
@@ -18,30 +20,22 @@ show_toc: false
 
       <div class="swiper-slide">
         <img src="/media/slide1.jpg" alt="AI Game Development" class="slide-img">
-        <div class="slide-caption">
-          <h3>AI Game Development</h3>
-        </div>
+        <div class="slide-caption"><h3>AI Game Development</h3></div>
       </div>
 
       <div class="swiper-slide">
-        <img src="/media/slide2.jpg" alt="AI Image Generation" class="slide-img">
-        <div class="slide-caption">
-          <h3>AI Image Generation</h3>
-        </div>
+        <img src="/media/slide-2.jpg" alt="AI Image Generation" class="slide-img">
+        <div class="slide-caption"><h3>AI Image Generation</h3></div>
       </div>
 
       <div class="swiper-slide">
-        <img src="/media/slide3.jpg" alt="Fake Review Detection" class="slide-img">
-        <div class="slide-caption">
-          <h3>Fake Review Detection</h3>
-        </div>
+        <img src="/media/slide-3.jpg" alt="Fake Review Detection" class="slide-img">
+        <div class="slide-caption"><h3>Fake Review Detection</h3></div>
       </div>
 
       <div class="swiper-slide">
-        <img src="/media/slide4.jpg" alt="Data" class="slide-img">
-        <div class="slide-caption">
-          <h3>Data</h3>
-        </div>
+        <img src="/media/slide-4.jpg" alt="Data" class="slide-img">
+        <div class="slide-caption"><h3>Data</h3></div>
       </div>
 
     </div>
@@ -53,10 +47,6 @@ show_toc: false
 </section>
 
 <style>
-/* =========================
-   슬라이더 전체 스타일 정의
-   ========================= */
-
 .slider-section {
   position: relative;
   width: 100vw;
@@ -69,7 +59,6 @@ show_toc: false
   justify-content: center;
   align-items: center;
 }
-
 .slider-section .swiper {
   width: 70%;
   aspect-ratio: 16/9;
@@ -78,14 +67,12 @@ show_toc: false
   justify-content: center;
   align-items: center;
 }
-
 .slider-section .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
   background: #000;
 }
-
 .slider-section .slide-img {
   max-width: 100%;
   height: 100%;
@@ -93,65 +80,45 @@ show_toc: false
   display: block;
   margin: 0 auto;
 }
-
 .slider-section .slide-caption {
   position: absolute;
   left: 50%;
   bottom: 8%;
   transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0,0,0,0.55);
   padding: 1rem 1.25rem;
   border-radius: 10px;
   color: white;
   text-align: center;
 }
-
 .slider-section .slide-caption h3 {
   margin: 0;
   font-size: 1.5rem;
 }
-
 .slider-section .swiper {
   --swiper-navigation-size: 18px;
 }
-
 .slider-section .swiper-button-prev,
 .slider-section .swiper-button-next {
-  width: 34px;
-  height: 34px;
-  background: rgba(0, 0, 0, 0.35);
+  width: 34px; height: 34px;
+  background: rgba(0,0,0,0.35);
   border-radius: 50%;
   color: white;
-  transition: background 0.2s;
+  transition: background .2s;
 }
-
 .slider-section .swiper-button-prev:hover,
 .slider-section .swiper-button-next:hover {
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0,0,0,0.65);
 }
-
 .slider-section .swiper-pagination-bullet {
-  width: 7px;
-  height: 7px;
+  width: 7px; height: 7px;
   background: #ccc;
-  opacity: 0.9;
+  opacity: .9;
 }
-
-.slider-section .swiper-pagination-bullet-active {
-  background: #fff;
-}
-
-/* 모바일 대응 */
-@media (max-width: 640px) {
-  .slider-section .swiper {
-    width: 95%;
-    aspect-ratio: 4/3;
-  }
-  .slider-section .slide-caption {
-    font-size: 0.85rem;
-    bottom: 6%;
-    padding: 0.7rem 1rem;
-  }
+.slider-section .swiper-pagination-bullet-active { background: #fff; }
+@media (max-width: 640px){
+  .slider-section .swiper{ width: 95%; aspect-ratio: 4/3; }
+  .slider-section .slide-caption{ font-size:.85rem; bottom:6%; padding:.7rem 1rem; }
 }
 </style>
 
