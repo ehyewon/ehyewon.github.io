@@ -22,7 +22,7 @@ sections:
       backgroud:
         color: black
         image:
-          filename: #이미지 나중에 추가하기 stacked-peaks.svg
+          filename: symbol-scatter-haikei.svg
 
       # Avatar customization
       avatar:
