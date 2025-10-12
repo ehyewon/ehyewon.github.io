@@ -14,7 +14,7 @@ main:
     url: /#news
     weight: 12
   - name: 전북대
-    url: /#blog
+    url: /#jbnu
     weight: 13
   - name: 경력
     url: experience/
