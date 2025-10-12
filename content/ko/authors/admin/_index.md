@@ -31,12 +31,10 @@ profiles:
     label: 메일
     
   - icon: brands/github
-    icon_pack: fontawesome
     url: 'https://github.com/ehyewon'
     label: 깃허브
 
   - icon: brands/instagram
-    icon_pack: fontawesome
     url: 'https://instagram.com/_hywoni'
     label: 인스타그램
 
@@ -44,6 +42,16 @@ profiles:
     icon_pack: fas
     url: 'https://m.blog.naver.com/2eehyni_'
     label: 블로그
+
+  - icon: brands/discord
+    url: https://discord.gg/gb8vpsbD
+    label: 디스코드
+
+  - icon: brands/youtube
+    url: https://youtube.com/channel/UCvFpOA0Kye8Zj_KMAOYZBsg?si=xCn1ab6CNrYmHEa1
+    label: 유튜브
+
+
 
 interests:
   - 데이터 베이스
@@ -128,10 +136,6 @@ languages:
   - name: Spanish
     percent: 50
 
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
   - title: Best Paper Award
     url: https://neurips.cc/

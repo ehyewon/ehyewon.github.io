@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: system
-  color: indigo
+  color: #ff7b00
   favicon: icon.png
 
 # SEO

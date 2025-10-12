@@ -7,21 +7,37 @@ main:
   - name: 내 정보
     url: /
     weight: 10
+
   - name: 관심사
     url: /#papers
     weight: 11
+
   - name: 뉴스
     url: /#news
     weight: 12
+
   - name: 전북대
     url: /#jbnu
     weight: 13
+
   - name: 경력
     url: experience/
     weight: 20
-  - name: 프로젝트
-    url: projects/
+
+  - parent: 프로젝트
+    name: 파이썬 게임
+    url: projects/pygame
     weight: 30
+  - parent: 프로젝트
+    name: 리눅스 사물함 시스템
+    url: projects/locksystem
+    weight: 30
+  - parent: 프로젝트
+    name: 홈페이지 만들기
+    url: projects/homepage
+    weight: 30
+
+
   - name: 연락
     url: contact/
     weight: 40
