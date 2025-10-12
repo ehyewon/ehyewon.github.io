@@ -1,0 +1,36 @@
+<div class="relative w-full overflow-hidden rounded-2xl shadow-lg">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      {{ range .Params.slides }}
+        <div class="swiper-slide relative">
+          <img src="{{ .image | relURL }}" class="w-full h-96 object-cover" alt="{{ .title }}">
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-center text-white">
+            <h2 class="text-2xl font-bold mb-2">{{ .title }}</h2>
+            <p class="text-lg">{{ .description }}</p>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+    <!-- Navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<!-- SwiperJS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: { delay: 3000 },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  });
+</script>
