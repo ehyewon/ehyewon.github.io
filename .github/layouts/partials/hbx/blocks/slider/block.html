@@ -1,0 +1,132 @@
+{{/* layouts/partials/hbx/blocks/slider/block.html */}}
+{{ $slides := .block.content.slides }}
+
+<div id="custom-slider" class="relative overflow-hidden w-full">
+
+  <style>
+    .slider-container {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+    }
+    .slider-slide {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100%;
+      transition: all 1s ease-in-out;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+    }
+    .slider-slide.active {
+      left: 0;
+    }
+    .slider-slide.prev {
+      left: -100%;
+    }
+    .slider-slide.next {
+      left: 100%;
+    }
+    .slider-overlay {
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    .slider-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 1rem;
+    }
+    .slider-controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      z-index: 3;
+    }
+    .slider-btn {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 50%;
+    }
+    .slider-btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  </style>
+
+  <div class="slider-container">
+    {{ range $index, $slide := $slides }}
+      <div class="slider-slide{{ if eq $index 0 }} active{{ end }}" 
+           style="background-image: url('/media/{{ $slide.background.image.filename }}');">
+        <div class="slider-overlay"></div>
+        <div class="slider-content">
+          <h1 class="text-4xl font-bold mb-3">{{ $slide.title }}</h1>
+          <p class="text-lg mb-4">{{ $slide.content }}</p>
+
+          {{ with $slide.link }}
+            <a href="{{ .url }}" class="inline-block bg-white text-black px-4 py-2 rounded-lg hover:bg-gray-200 transition">
+              {{ if .icon }}<i class="{{ .icon_pack }} fa-{{ .icon }}"></i>{{ end }}
+              {{ .text }}
+            </a>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    <div class="slider-controls">
+      <button class="slider-btn" id="prevBtn">&#10094;</button>
+      <button class="slider-btn" id="nextBtn">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('#custom-slider .slider-slide');
+    let current = 0;
+    const total = slides.length;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active', 'prev', 'next');
+        if (i === index) slide.classList.add('active');
+        else if (i === (index - 1 + total) % total) slide.classList.add('prev');
+        else if (i === (index + 1) % total) slide.classList.add('next');
+      });
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      current = (current - 1 + total) % total;
+      showSlide(current);
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      current = (current + 1) % total;
+      showSlide(current);
+    });
+
+    // 자동 슬라이드
+    setInterval(() => {
+      current = (current + 1) % total;
+      showSlide(current);
+    }, 3500);
+
+    showSlide(current);
+  </script>
+</div>
