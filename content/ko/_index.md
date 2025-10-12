@@ -42,9 +42,10 @@ sections:
     design:
       columns: '1'
 
-  - block: html
-    content:
+sections:
+  - content:
       html: '{{ partial "hbx/slide.html" . }}'
+
 
 
   - block: collection
