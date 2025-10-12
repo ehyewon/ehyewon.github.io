@@ -1,4 +1,12 @@
 ---
+title: "직접 만나기"
+summary: "연락주세요"
+date: 2023-09-27
+type: landing
+
+design:
+  spacing: '5rem'
+
 # 페이지 섹션
 sections:
   - block: markdown
