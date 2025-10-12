@@ -45,7 +45,10 @@ sections:
   # 🎞 이미지 슬라이더 추가
 sections:
 
-  - block: custom_slider
+  sections:
+  - content:
+      html: '{{ partial "hbx/blocks/custom_slider/block.html" . }}'
+
     content:
       slides:
       - title: 프론트엔드
