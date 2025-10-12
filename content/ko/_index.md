@@ -42,11 +42,6 @@ sections:
     design:
       columns: '1'
 
-  # 🎞 이미지 슬라이더 추가
-{{< rawhtml >}}
-{{< partial "slider.html" >}}
-{{< /rawhtml >}}
-
   - block: collection
     id: papers
     content:
@@ -100,3 +95,8 @@ sections:
         css_class: ""
         css_style: ""
 ---
+
+  # 🎞 이미지 슬라이더 추가
+{{< rawhtml >}}
+{{< partial "slider.html" >}}
+{{< /rawhtml >}}
