@@ -39,7 +39,7 @@ sections:
       columns: '1'
 
   #슬라이더 블록
-  - block: custom_slider1
+  - block: collection
     content:
       dir: "" 
       height: "" 
