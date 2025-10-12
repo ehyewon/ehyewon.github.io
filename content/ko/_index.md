@@ -5,13 +5,11 @@ date: 2022-10-24
 type: landing
 
 design:
-  # Default section spacing
   spacing: '6rem'
 
 sections:
   - block: resume-biography-3
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
       text: ""
       button:
@@ -28,7 +26,6 @@ sections:
           size: cover
           position: center
           parallax: false
-      # Avatar customization
       avatar:
         size: medium
         shape: circle
@@ -38,7 +35,11 @@ sections:
       title: '📚 Introduce'
       subtitle: ''
       text: |-
-        안녕하세요. 웹 개발자를 희망하는 이헤원입니다. 이 공간은 저를 소개하는 공간입니다. 해당 사이트에서는 저의 기본적인 개인정보 외에도 제가 했던 포로젝트와 최근 트렌드 소식까지 만나보실 수 있습니다. 편하게 둘러보세요!
+        안녕하세요. 웹 개발자를 희망하는 이혜원입니다.  
+        이 공간은 저를 소개하는 공간입니다.  
+        해당 사이트에서는 저의 기본적인 개인정보 외에도  
+        제가 했던 프로젝트와 최근 트렌드 소식까지 만나보실 수 있습니다.  
+        편하게 둘러보세요!
     design:
       columns: '1'
 
@@ -56,7 +57,6 @@ sections:
   - block: collection
     content:
       title: 뉴스
-      text: ''
       filters:
         folders:
           - news     
@@ -65,11 +65,9 @@ sections:
       columns: 4
           
   - block: collection
-    id: 
+    id: jbnu
     content:
       title: 전북대
-      subtitle: ''
-      text: ''
       count: 5
       filters:
         folders: 
@@ -96,5 +94,4 @@ sections:
         css_style: ""
 ---
 
-  # 🎞 이미지 슬라이더 추가
-{{ partial "slider.html" . }}
+{{< slider >}}
