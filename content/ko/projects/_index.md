@@ -17,7 +17,7 @@ sections:
       text: 저의 프로젝트 입니다.
       filters:
         folders:
-          - ko/projects
+          - projects
     design:
       view: article-grid
       fill_image: false

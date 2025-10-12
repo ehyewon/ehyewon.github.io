@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: system
-  color: indigo
+  color: black
   favicon: icon.png
 
 # SEO
@@ -35,7 +35,6 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: 'Home'
       filename: 'logo.png'
 
 # Site footer
