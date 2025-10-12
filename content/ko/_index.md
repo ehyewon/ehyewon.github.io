@@ -42,11 +42,56 @@ sections:
     design:
       columns: '1'
 
-
-
   # 🎞 이미지 슬라이더 추가
-  - content:
-      html: '{{ partial "hbx/slide.html" . }}'
+sections:
+
+  - block: slider
+    content:
+      slides:
+      - title: 프론트엔드
+        content: React와 Next.js로 인터랙티브한 웹 경험을 만듭니다.
+        align: center
+        background:
+          image:
+            filename: slide1.jpg
+            filters:
+              brightness: 0.45
+          position: center
+          color: '#000'
+
+      - title: 빅데이터
+        content: Python, Pandas, SQL로 데이터를 시각화하고 인사이트를 얻습니다.
+        align: center
+        background:
+          image:
+            filename: slide2.jpg
+            filters:
+              brightness: 0.45
+          position: center
+          color: '#000'
+
+      - title: 데이터베이스
+        content: MySQL과 MongoDB로 효율적인 데이터 구조를 설계합니다.
+        align: center
+        background:
+          image:
+            filename: slide3.jpg
+            filters:
+              brightness: 0.45
+          position: center
+          color: '#000'
+
+      - title: AI & Web
+        content: 인공지능 모델을 웹 서비스로 구현하며 새로운 가치를 창출합니다.
+        align: center
+        background:
+          image:
+            filename: slide4.jpg
+            filters:
+              brightness: 0.45
+          position: center
+          color: '#000'
+
 
   - block: collection
     id: papers
