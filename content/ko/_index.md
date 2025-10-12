@@ -43,72 +43,9 @@ sections:
       columns: '1'
 
   # 🎞 이미지 슬라이더 추가
-sections:
-
-  - block: slider
-    content:
-      slides:
-      - title: 데이터베이스
-        content: 데이터베이스를 공부하고 있습니다
-        align: center
-        background:
-          image:
-            filename: slide1.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
-
-      - title: 웹 서비스 설계
-        content: 실용적이고 감각적인 웹 디자인을 추구합니다
-        align: center
-        background:
-          image:
-            filename: slide2.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
-
-      - title: Travel
-        content: 여행을 좋아하는
-        align: center
-        background:
-          image:
-            filename: fukuoka.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
-
-      - title: Front-end
-        content: 프론트 엔드 개발 지망 학부생
-        align: center
-        background:
-          image:
-            filename: coding.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
-
-
-      - title: 이가은
-        content: 이가은에 대해 더 알아보기
-        align: center
-        background:
-          image:
-            filename: avatar.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
-        link:
-          icon: user
-          icon_pack: fas
-          text: Click me
-          text-color: '#000'
-          url: contact
+{{< rawhtml >}}
+{{< partial "slider.html" >}}
+{{< /rawhtml >}}
 
   - block: collection
     id: papers
