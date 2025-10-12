@@ -45,7 +45,7 @@ sections:
   # 🎞 이미지 슬라이더 추가
 sections:
 
-  - block: slider
+  - block: custom_slider
     content:
       slides:
       - title: 프론트엔드
