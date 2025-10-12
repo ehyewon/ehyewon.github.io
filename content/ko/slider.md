@@ -1,13 +1,3 @@
----
-title: "Portfolio Slider"
-type: raw
-layout: none
-outputs:
-  - html
----
-
-{{< rawhtml >}}
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -187,5 +177,3 @@ outputs:
   </script>
 </body>
 </html>
-
-{{< /rawhtml >}}
