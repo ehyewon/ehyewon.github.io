@@ -1,52 +1,57 @@
 {{ $slides := .block.content.slides }}
 
+<!-- ✅ Tailwind 호환 HugoBlox Custom Slider -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<div class="swiper gallery-slider">
-  <div class="swiper-wrapper">
-    {{ range $slides }}
-      <div class="swiper-slide" style="position: relative;">
-        <img src="/images/{{ .background.image.filename }}" alt="{{ .title }}" style="width: 100%; height: 420px; object-fit: cover;">
-        <div class="slide-caption">
-          <h3>{{ .title }}</h3>
-          <p>{{ .content }}</p>
+<div class="relative w-full max-w-screen-xl mx-auto mb-10">
+  <div class="swiper my-slider rounded-2xl overflow-hidden shadow-xl">
+    <div class="swiper-wrapper">
+      {{ range $slides }}
+      <div class="swiper-slide relative">
+        <img src="/images/{{ .background.image.filename }}" alt="{{ .title }}" class="w-full h-[420px] object-cover" />
+        <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center text-white p-6">
+          <h2 class="text-3xl font-bold mb-3 drop-shadow-lg">{{ .title }}</h2>
+          <p class="text-lg opacity-90 max-w-2xl">{{ .content }}</p>
+          {{ with .link }}
+          <a href="{{ .url }}" class="mt-4 inline-flex items-center gap-2 bg-white text-black px-4 py-2 rounded-lg font-medium hover:bg-gray-100 transition">
+            {{ if .icon }}
+            <i class="fa{{ if eq .icon_pack "fab" }}b{{ else }}s{{ end }} fa-{{ .icon }}"></i>
+            {{ end }}
+            {{ .text }}
+          </a>
+          {{ end }}
         </div>
       </div>
-    {{ end }}
-  </div>
+      {{ end }}
+    </div>
 
-  <span class="swiper-button-prev"></span>
-  <span class="swiper-button-next"></span>
+    <!-- Controls -->
+    <div class="swiper-button-prev !text-white"></div>
+    <div class="swiper-button-next !text-white"></div>
+  </div>
 </div>
 
+<!-- Swiper.js Init -->
 <script>
-  const swiper = new Swiper('.gallery-slider', {
+  const swiper = new Swiper('.my-slider', {
     loop: true,
     autoplay: { delay: 4000 },
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    effect: 'slide',
   });
 </script>
 
+<!-- Extra styling -->
 <style>
-  .slide-caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.55);
-    padding: 20px 35px;
-    border-radius: 15px;
-    text-align: center;
-    backdrop-filter: blur(4px);
-  }
-  .slide-caption h3 { font-size: 2.4rem; margin: 0; font-weight: 700; }
-  .slide-caption p { font-size: 1.3rem; margin: 10px 0 0; font-weight: 400; }
-  .swiper-button-prev, .swiper-button-next {
-    color: white;
-    width: 45px; height: 45px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 9999px;
   }
 </style>
