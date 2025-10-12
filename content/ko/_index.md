@@ -94,8 +94,9 @@ sections:
         css_style: ""
 ---
 
-{{ partial "list-to-carousel.html" .Content }}
+<script type="text/javascript" src="/js/auto-carousel.js"></script>
 <link rel="stylesheet" href="/css/auto-carousel.css">
 </body>
 </html>
+
 
