@@ -42,60 +42,53 @@ sections:
     design:
       columns: '1'
 
-  # 🖼️ 자동 이미지 슬라이더 (여기 추가됨!)
-  - block: html
-    id: main-slider
+  - block: slider
     content:
-      html: |
-        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
-          <div class="carousel-inner">
+      slides:
+        - title: 프론트엔드
+          content: React와 Next.js로 인터랙티브한 웹 경험을 만듭니다.
+          align: center
+          background:
+            image:
+              filename: slides/slide1.jpg
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
 
-            <!-- 🎨 프론트엔드 -->
-            <div class="carousel-item active">
-              <img src="/media/slides/slide1.jpg" class="d-block w-100 rounded-xl shadow-lg" alt="frontend">
-              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0,0,0,0.45); border-radius: 12px; padding: 10px;">
-                <h1 class="fw-bold mb-3">웹을 디자인하는 개발자</h1>
-                <p>React와 Next.js로 인터랙티브한 웹 경험을 만듭니다.</p>
-              </div>
-            </div>
+        - title: 빅데이터
+          content: Python, Pandas, SQL로 인사이트를 시각화합니다.
+          align: center
+          background:
+            image:
+              filename: slides/slide2.jpg
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
 
-            <!-- 📊 빅데이터 -->
-            <div class="carousel-item">
-              <img src="/media/slide2.jpg" class="d-block w-100 rounded-xl shadow-lg" alt="bigdata">
-              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0,0,0,0.45); border-radius: 12px; padding: 10px;">
-                <h1 class="fw-bold mb-3">데이터로 세상을 해석하다</h1>
-                <p>Python, Pandas, SQL로 인사이트를 시각화합니다.</p>
-              </div>
-            </div>
+        - title: 데이터베이스
+          content: MySQL과 MongoDB로 효율적인 데이터 구조를 설계합니다.
+          align: center
+          background:
+            image:
+              filename: slides/slide3.jpg
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
 
-            <!-- 🧠 데이터베이스 -->
-            <div class="carousel-item">
-              <img src="/media/slide3.jpg" class="d-block w-100 rounded-xl shadow-lg" alt="database">
-              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0,0,0,0.45); border-radius: 12px; padding: 10px;">
-                <h1 class="fw-bold mb-3">데이터의 뿌리를 설계하다</h1>
-                <p>MySQL과 MongoDB로 효율적인 데이터 구조를 만듭니다.</p>
-              </div>
-            </div>
+        - title: AI & Web
+          content: 인공지능 모델을 웹 서비스로 구현합니다.
+          align: center
+          background:
+            image:
+              filename: slides/slide4.jpg
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
 
-            <!-- 🤖 AI -->
-            <div class="carousel-item">
-              <img src="/media/slides/slide4.jpg" class="d-block w-100 rounded-xl shadow-lg" alt="ai">
-              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0,0,0,0.45); border-radius: 12px; padding: 10px;">
-                <h1 class="fw-bold mb-3">AI와 웹의 다리</h1>
-                <p>인공지능 모델을 웹 서비스로 구현합니다.</p>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- 좌우 컨트롤 -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </button>
-        </div>
 
   - block: collection
     id: papers
