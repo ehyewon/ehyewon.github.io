@@ -19,7 +19,7 @@ sections:
         url: uploads/resume.pdf
     design:
       css_class: dark
-      backgroud:
+      background:
         color: black
         image:
           filename: stacked-peaks.svg
