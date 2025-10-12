@@ -43,6 +43,13 @@ sections:
     design:
       columns: '1'
 
+    blocks:
+  - block: slider
+    content:
+      id: section-slider
+    design:
+      columns: "1"
+
   - block: collection
     id: papers
     content:
