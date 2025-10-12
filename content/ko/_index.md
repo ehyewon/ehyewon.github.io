@@ -97,6 +97,4 @@ sections:
 ---
 
   # 🎞 이미지 슬라이더 추가
-{{< rawhtml >}}
 {{< partial "slider.html" >}}
-{{< /rawhtml >}}
