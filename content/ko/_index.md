@@ -97,4 +97,4 @@ sections:
 ---
 
   # 🎞 이미지 슬라이더 추가
-{{< partial "slider.html" >}}
+{{ partial "slider.html" . }}
