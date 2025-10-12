@@ -1,12 +1,4 @@
 ---
-title: "저를 만나고싶다면?"
-summary: "일정을 잡은 후 여기로 방문해주세요"
-date: 2025-10-12
-type: landing
-
-design:
-  spacing: '5rem'
-
 # 페이지 섹션
 sections:
   - block: markdown
