@@ -94,4 +94,8 @@ sections:
         css_style: ""
 ---
 
-{{< slider >}}
+{{ partial "list-to-carousel.html" .Content }}
+<link rel="stylesheet" href="/css/auto-carousel.css">
+</body>
+</html>
+
