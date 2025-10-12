@@ -23,6 +23,3 @@ mounts:
     target: layouts
   - source: assets
     target: assets
-goldmark:
-  renderer:
-    unsafe: true
