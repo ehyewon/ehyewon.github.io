@@ -41,6 +41,7 @@ sections:
         <div class="relative w-full max-w-7xl mx-auto mt-8 overflow-hidden rounded-2xl shadow-xl">
           <!-- 슬라이드 컨테이너 -->
           <div class="flex transition-transform duration-700 ease-in-out" id="slider">
+
             <!-- Slide 1 -->
             <div class="relative w-full flex-shrink-0">
               <img src="/images/slide1.jpg" class="w-full h-[550px] object-cover opacity-70" alt="Slide 1">
@@ -76,6 +77,7 @@ sections:
                 <p class="text-xl font-medium">AI 시대를 이끄는</p>
               </div>
             </div>
+
           </div>
 
           <!-- 좌우 버튼 -->
