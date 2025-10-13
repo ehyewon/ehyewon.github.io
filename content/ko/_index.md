@@ -31,7 +31,7 @@ sections:
         size: medium
         shape: circle
 
-  # 🖼️ 이미지 슬라이드 (투명도 + 텍스트 오버레이 포함)
+  # 🖼️ 이미지 슬라이드 추가
   - block: markdown
     content:
       title: ""
@@ -39,42 +39,10 @@ sections:
       text: |-
         <div class="relative w-full max-w-5xl mx-auto mt-6 overflow-hidden rounded-2xl shadow-lg">
           <div class="flex transition-transform duration-700 ease-in-out" id="slider">
-
-            <!-- Slide 1 -->
-            <div class="relative w-full flex-shrink-0">
-              <img src="/images/slide1.jpg" class="w-full flex-shrink-0 object-cover opacity-80" alt="Slide 1">
-              <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center">
-                <h2 class="text-4xl font-extrabold mb-2 drop-shadow-lg">웹 서비스 설계</h2>
-                <p class="text-lg font-medium">실용적이고 감각적인</p>
-              </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="relative w-full flex-shrink-0">
-              <img src="/images/slide2.jpg" class="w-full flex-shrink-0 object-cover opacity-80" alt="Slide 2">
-              <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center">
-                <h2 class="text-4xl font-extrabold mb-2 drop-shadow-lg">빅데이터</h2>
-                <p class="text-lg font-medium">데이터로 트렌드를 읽는</p>
-              </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="relative w-full flex-shrink-0">
-              <img src="/images/slide3.jpg" class="w-full flex-shrink-0 object-cover opacity-80" alt="Slide 3">
-              <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center">
-                <h2 class="text-4xl font-extrabold mb-2 drop-shadow-lg">데이터베이스</h2>
-                <p class="text-lg font-medium">정보를 다루는 기술</p>
-              </div>
-            </div>
-
-            <!-- Slide 4 -->
-            <div class="relative w-full flex-shrink-0">
-              <img src="/images/slide4.jpg" class="w-full flex-shrink-0 object-cover opacity-80" alt="Slide 4">
-              <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center">
-                <h2 class="text-4xl font-extrabold mb-2 drop-shadow-lg">AI</h2>
-                <p class="text-lg font-medium">AI 시대를 이끄는</p>
-              </div>
-            </div>
+            <img src="/images/slide1.jpg" class="w-full flex-shrink-0 object-cover" alt="Slide 1">
+            <img src="/images/slide2.jpg" class="w-full flex-shrink-0 object-cover" alt="Slide 2">
+            <img src="/images/slide3.jpg" class="w-full flex-shrink-0 object-cover" alt="Slide 3">
+            <img src="/images/slide4.jpg" class="w-full flex-shrink-0 object-cover" alt="Slide 4">
           </div>
 
           <button onclick="prevSlide()" class="absolute top-1/2 left-3 transform -translate-y-1/2 bg-black/40 text-white px-3 py-2 rounded-full hover:bg-black/70">‹</button>
