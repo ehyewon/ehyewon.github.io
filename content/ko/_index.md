@@ -31,53 +31,52 @@ sections:
         size: medium
         shape: circle
 
-  # 🖼️ 이미지 슬라이드 (홈 메인용)
+  # 🖼️ 이미지 슬라이드 (홈 메인용, 가로 2.5배 확장 + 세로 절반)
   - block: markdown
     content:
       title: ""
       subtitle: ""
       text: |-
-        <!-- 이미지 슬라이드 (home main용, 텍스트 오버레이 포함) -->
-        <div class="relative w-full max-w-7xl mx-auto mt-8 overflow-hidden rounded-2xl shadow-xl">
+        <!-- 이미지 슬라이드 (home main용, 가로 2.5배 확대 & 세로 절반 축소) -->
+        <div class="relative w-[250vw] max-w-none left-1/2 -translate-x-1/2 mx-auto mt-8 overflow-hidden rounded-2xl shadow-xl">
           <!-- 슬라이드 컨테이너 -->
           <div class="flex transition-transform duration-700 ease-in-out" id="slider">
-
+            
             <!-- Slide 1 -->
             <div class="relative w-full flex-shrink-0">
-              <img src="/images/slide1.jpg" class="w-full h-[550px] object-cover opacity-70" alt="Slide 1">
+              <img src="/images/slide1.jpg" class="w-full h-[275px] object-cover opacity-70" alt="Slide 1">
               <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-                <h2 class="text-5xl font-extrabold mb-2 drop-shadow-lg">웹 서비스 설계</h2>
-                <p class="text-xl font-medium">실용적이고 감각적인</p>
+                <h2 class="text-4xl font-extrabold mb-1 drop-shadow-lg">웹 서비스 설계</h2>
+                <p class="text-lg font-medium">실용적이고 감각적인</p>
               </div>
             </div>
 
             <!-- Slide 2 -->
             <div class="relative w-full flex-shrink-0">
-              <img src="/images/slide2.jpg" class="w-full h-[550px] object-cover opacity-70" alt="Slide 2">
+              <img src="/images/slide2.jpg" class="w-full h-[275px] object-cover opacity-70" alt="Slide 2">
               <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-                <h2 class="text-5xl font-extrabold mb-2 drop-shadow-lg">빅데이터</h2>
-                <p class="text-xl font-medium">데이터를 통해 트렌드를 읽는</p>
+                <h2 class="text-4xl font-extrabold mb-1 drop-shadow-lg">빅데이터</h2>
+                <p class="text-lg font-medium">데이터를 통해 트렌드를 읽는</p>
               </div>
             </div>
 
             <!-- Slide 3 -->
             <div class="relative w-full flex-shrink-0">
-              <img src="/images/slide3.jpg" class="w-full h-[550px] object-cover opacity-70" alt="Slide 3">
+              <img src="/images/slide3.jpg" class="w-full h-[275px] object-cover opacity-70" alt="Slide 3">
               <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-                <h2 class="text-5xl font-extrabold mb-2 drop-shadow-lg">데이터베이스</h2>
-                <p class="text-xl font-medium">데이터를 다루는</p>
+                <h2 class="text-4xl font-extrabold mb-1 drop-shadow-lg">데이터베이스</h2>
+                <p class="text-lg font-medium">데이터를 다루는</p>
               </div>
             </div>
 
             <!-- Slide 4 -->
             <div class="relative w-full flex-shrink-0">
-              <img src="/images/slide4.jpg" class="w-full h-[550px] object-cover opacity-70" alt="Slide 4">
+              <img src="/images/slide4.jpg" class="w-full h-[275px] object-cover opacity-70" alt="Slide 4">
               <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-                <h2 class="text-5xl font-extrabold mb-2 drop-shadow-lg">AI</h2>
-                <p class="text-xl font-medium">AI 시대를 이끄는</p>
+                <h2 class="text-4xl font-extrabold mb-1 drop-shadow-lg">AI</h2>
+                <p class="text-lg font-medium">AI 시대를 이끄는</p>
               </div>
             </div>
-
           </div>
 
           <!-- 좌우 버튼 -->
@@ -85,7 +84,7 @@ sections:
           <button onclick="nextSlide()" class="absolute top-1/2 right-5 transform -translate-y-1/2 bg-black/40 text-white px-4 py-2 rounded-full hover:bg-black/70 text-2xl">›</button>
 
           <!-- 인디케이터 -->
-          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+          <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
             <button class="w-3 h-3 bg-white/80 rounded-full" onclick="goToSlide(0)"></button>
             <button class="w-3 h-3 bg-white/40 rounded-full" onclick="goToSlide(1)"></button>
             <button class="w-3 h-3 bg-white/40 rounded-full" onclick="goToSlide(2)"></button>
@@ -105,7 +104,7 @@ sections:
           currentSlide = index;
 
           // 인디케이터 색 변경
-          document.querySelectorAll('.absolute.bottom-4 button').forEach((dot, i) => {
+          document.querySelectorAll('.absolute.bottom-3 button').forEach((dot, i) => {
             dot.classList.toggle('bg-white/80', i === index);
             dot.classList.toggle('bg-white/40', i !== index);
           });

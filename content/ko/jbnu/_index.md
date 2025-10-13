@@ -1,28 +1,20 @@
 ---
-title: Courses
-summary: My courses
+title: "전북대학교 바로가기"
+summary: "전북대학교 주요 서비스 모음"
 type: landing
-
-cascade:
-  - target:
-      path: '{/courses/*/**}'
-    type: docs
-    params:
-      show_breadcrumb: true
 
 sections:
   - block: collection
-    id: courses
     content:
-      title: Courses
+      title: "전북대 주요 사이트"
       filters:
-        tag: Course
-        kinds:
-          - section
+        folders:
+          - jbnu/homepage
+          - jbnu/jbedu
+          - jbnu/lms
+          - jbnu/oasis
     design:
       view: article-grid
-      show_read_time: false
-      show_date: false
-      show_read_more: false
-      columns: 1
+      columns: 2
 ---
+
