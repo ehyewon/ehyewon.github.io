@@ -31,58 +31,72 @@ sections:
         size: medium
         shape: circle
 
-  # 🖼️ 이미지 슬라이드 추가
-   # 🖼️ 이미지 슬라이드 (수정된 버전)
+  # 🖼️ 이미지 슬라이드 (홈 메인용)
   - block: markdown
     content:
       title: ""
       subtitle: ""
       text: |-
-        <!-- 수정 시작: 슬라이드 전체 크기 확장 및 오버레이/텍스트 추가 -->
-        <div class="relative w-full max-w-7xl mx-auto mt-6 overflow-hidden rounded-2xl shadow-lg">
+        <!-- 이미지 슬라이드 (home main용, 텍스트 오버레이 포함) -->
+        <div class="relative w-full max-w-7xl mx-auto mt-8 overflow-hidden rounded-2xl shadow-xl">
+          <!-- 슬라이드 컨테이너 -->
           <div class="flex transition-transform duration-700 ease-in-out" id="slider">
-            
-            <!-- Slide 1: Front-End -->
+            <!-- Slide 1 -->
             <div class="relative w-full flex-shrink-0">
-              <img src="/images/slide1.jpg" class="w-full h-[450px] object-cover opacity-80" alt="Slide 1">
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <h2 class="text-4xl font-bold text-white drop-shadow-lg">Front-End</h2>
+              <img src="/images/slide1.jpg" class="w-full h-[550px] object-cover opacity-70" alt="Slide 1">
+              <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+                <h2 class="text-5xl font-extrabold mb-2 drop-shadow-lg">웹 서비스 설계</h2>
+                <p class="text-xl font-medium">실용적이고 감각적인</p>
               </div>
             </div>
 
-            <!-- Slide 2: Big Data -->
+         <!-- 이미지 슬라이드 (home main용, 텍스트 오버레이 포함) -->
+        <div class="relative w-full max-w-7xl mx-auto mt-8 overflow-hidden rounded-2xl shadow-xl">
+          <!-- 슬라이드 컨테이너 -->
+          <div class="flex transition-transform duration-700 ease-in-out" id="slider">
+            <!-- Slide 2 -->
             <div class="relative w-full flex-shrink-0">
-              <img src="/images/slide2.jpg" class="w-full h-[450px] object-cover opacity-80" alt="Slide 2">
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <h2 class="text-4xl font-bold text-white drop-shadow-lg">Big Data</h2>
+              <img src="/images/slide2.jpg" class="w-full h-[550px] object-cover opacity-70" alt="Slide 2">
+              <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+                <h2 class="text-5xl font-extrabold mb-2 drop-shadow-lg">웹 서비스 설계</h2>
+                <p class="text-xl font-medium">실용적이고 감각적인</p>
               </div>
             </div>
 
-            <!-- Slide 3: Database -->
+
+        <!-- 이미지 슬라이드 (home main용, 텍스트 오버레이 포함) -->
+        <div class="relative w-full max-w-7xl mx-auto mt-8 overflow-hidden rounded-2xl shadow-xl">
+          <!-- 슬라이드 컨테이너 -->
+          <div class="flex transition-transform duration-700 ease-in-out" id="slider">
+            <!-- Slide 3 -->
             <div class="relative w-full flex-shrink-0">
-              <img src="/images/slide3.jpg" class="w-full h-[450px] object-cover opacity-80" alt="Slide 3">
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <h2 class="text-4xl font-bold text-white drop-shadow-lg">Database</h2>
+              <img src="/images/slide3.jpg" class="w-full h-[550px] object-cover opacity-70" alt="Slide 3">
+              <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+                <h2 class="text-5xl font-extrabold mb-2 drop-shadow-lg">웹 서비스 설계</h2>
+                <p class="text-xl font-medium">실용적이고 감각적인</p>
               </div>
             </div>
 
-            <!-- Slide 4: AI -->
+         <!-- 이미지 슬라이드 (home main용, 텍스트 오버레이 포함) -->
+        <div class="relative w-full max-w-7xl mx-auto mt-8 overflow-hidden rounded-2xl shadow-xl">
+          <!-- 슬라이드 컨테이너 -->
+          <div class="flex transition-transform duration-700 ease-in-out" id="slider">
+            <!-- Slide 4 -->
             <div class="relative w-full flex-shrink-0">
-              <img src="/images/slide4.jpg" class="w-full h-[450px] object-cover opacity-80" alt="Slide 4">
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <h2 class="text-4xl font-bold text-white drop-shadow-lg">AI</h2>
+              <img src="/images/slide4.jpg" class="w-full h-[550px] object-cover opacity-70" alt="Slide 4">
+              <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+                <h2 class="text-5xl font-extrabold mb-2 drop-shadow-lg">웹 서비스 설계</h2>
+                <p class="text-xl font-medium">실용적이고 감각적인</p>
               </div>
             </div>
-
-          </div>
 
           <!-- 좌우 버튼 -->
-          <button onclick="prevSlide()" class="absolute top-1/2 left-3 transform -translate-y-1/2 bg-black/40 text-white px-3 py-2 rounded-full hover:bg-black/70">‹</button>
-          <button onclick="nextSlide()" class="absolute top-1/2 right-3 transform -translate-y-1/2 bg-black/40 text-white px-3 py-2 rounded-full hover:bg-black/70">›</button>
+          <button onclick="prevSlide()" class="absolute top-1/2 left-5 transform -translate-y-1/2 bg-black/40 text-white px-4 py-2 rounded-full hover:bg-black/70 text-2xl">‹</button>
+          <button onclick="nextSlide()" class="absolute top-1/2 right-5 transform -translate-y-1/2 bg-black/40 text-white px-4 py-2 rounded-full hover:bg-black/70 text-2xl">›</button>
 
-          <!-- 하단 점 버튼 -->
-          <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-            <button class="w-3 h-3 bg-white/70 rounded-full" onclick="goToSlide(0)"></button>
+          <!-- 인디케이터 -->
+          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            <button class="w-3 h-3 bg-white/80 rounded-full" onclick="goToSlide(0)"></button>
             <button class="w-3 h-3 bg-white/40 rounded-full" onclick="goToSlide(1)"></button>
             <button class="w-3 h-3 bg-white/40 rounded-full" onclick="goToSlide(2)"></button>
             <button class="w-3 h-3 bg-white/40 rounded-full" onclick="goToSlide(3)"></button>
@@ -90,26 +104,29 @@ sections:
         </div>
 
         <script>
-        // 기존 JS 동일
         let currentSlide = 0;
         const totalSlides = 4;
+
         function showSlide(index) {
           const slider = document.getElementById('slider');
           if (index < 0) index = totalSlides - 1;
           if (index >= totalSlides) index = 0;
           slider.style.transform = `translateX(-${index * 100}%)`;
           currentSlide = index;
-          document.querySelectorAll('.absolute.bottom-3 button').forEach((dot, i) => {
-            dot.classList.toggle('bg-white/70', i === index);
+
+          // 인디케이터 색 변경
+          document.querySelectorAll('.absolute.bottom-4 button').forEach((dot, i) => {
+            dot.classList.toggle('bg-white/80', i === index);
             dot.classList.toggle('bg-white/40', i !== index);
           });
         }
+
         function nextSlide() { showSlide(currentSlide + 1); }
         function prevSlide() { showSlide(currentSlide - 1); }
         function goToSlide(i) { showSlide(i); }
-        setInterval(() => { nextSlide(); }, 4000);
+
+        setInterval(() => { nextSlide(); }, 5000);
         </script>
-        <!-- 수정 끝 -->
     design:
       columns: '1'
 
