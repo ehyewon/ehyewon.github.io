@@ -159,13 +159,14 @@ sections:
     id: jbnu
     content:
       title: 전북대
-      count: 4
+      subtitle: ''
+      text: ''
       filters:
-        folders: 
+        folders:
           - jbnu
     design:
-      view: article-grid 
-      columns: 5
+      view: article-grid
+      columns: 4
 
   - block: cta-card
     demo: false

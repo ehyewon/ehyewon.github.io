@@ -1,15 +1,15 @@
 ---
-title: "JB-EDU (전북대 이러닝)"
-summary: "온라인 강의와 교육 콘텐츠 플랫폼"
-date: 2025-10-13
+title: JEduTools
+summary: 함께 만드는 SW 교육 혁신 플랫폼 — Litmus, JCode, JCloud 등 학습 도구 제공
+date: 2023-10-25
 image:
-  filename: jbnu-jbedu.png
+  filename: featured.jpg
 links:
-  - icon: external-link-alt
+  - icon: link
     icon_pack: fas
-    name: "JB-EDU 바로가기"
-    url: "https://jedutools.jbnu.ac.kr/"
-type: post
+    name: 바로가기
+    url: https://jbedu.jbnu.ac.kr
 ---
-전북대학교 온라인 교육 시스템 **JB-EDU**입니다.  
-강의 수강, 출석, 시험, 과제 등을 관리할 수 있습니다.
+
+JEduTools는 전북대학교의 소프트웨어 교육을 지원하는 플랫폼입니다.  
+학생들이 직접 참여해 개발한 다양한 학습 도구(Litmus, JCode, JCloud 등)를 제공합니다.
