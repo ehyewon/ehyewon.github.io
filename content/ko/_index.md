@@ -159,15 +159,10 @@ sections:
     id: jbnu
     content:
       title: 전북대
-      count: 5
+      count: 4
       filters:
         folders: 
-          - jbnu/homepage
-          - jbnu/jbedu
-          - jbnu/lms
-          - jbnu/oasis
-      offset: 0
-      order: desc
+          - jbnu
     design:
       view: article-grid 
       columns: 5
