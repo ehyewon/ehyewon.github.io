@@ -169,9 +169,8 @@ sections:
       offset: 0
       order: desc
     design:
-      view: card
-      spacing:
-        padding: [0, 0, 0, 0]
+      view: article-grid 
+      columns: 5
 
   - block: cta-card
     demo: false
