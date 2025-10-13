@@ -79,56 +79,56 @@ education:
       url: 'http://soongil.gen.hs.kr/'
 
 work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
-    company_url: 'https://ai.meta.com/'
+  - position: 학부 학생
+    company_name: 전북대학교 컴퓨터인공지능학부
+    company_url: 'https://csai.jbnu.ac.kr/'
     company_logo: ''
-    date_start: 2020-01-01
+    date_start: 2023-03-01
     date_end: ''
     summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
+      전북대학교 컴퓨터인공지능학부에 재학 중이며, 인공지능(AI)과 소프트웨어 개발 분야를 중심으로 학업에 전념하고 있습니다.
+      알고리즘, 운영체제, 데이터베이스 등 전공 기초를 학습하며 다양한 프로젝트와 코딩 스터디에 참여하고 있습니다.
+
+  - position: 학생회 활동
+    company_name: 전북대학교 컴퓨터인공지능학부 학생회
+    company_url: 'https://csai.jbnu.ac.kr/'
     company_logo: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+    date_start: 2023-03-01
+    date_end: ''
+    summary: |2-
+      2023학년도부터 현재까지 학부 학생회 소속으로 활동하며, 교내 행사 기획 및 운영, 학과 구성원 간의 교류 증진에 기여하고 있습니다.
+      학우들의 학업 및 커뮤니티 환경 개선을 위해 다양한 의견을 수렴하고, 주기적인 회의 및 행사 진행에 참여하고 있습니다.
+
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
-      - name: Python & PyTorch
-        description: ''
-        percent: 95
-        icon: code-bracket
-      - name: Machine Learning
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: Cloud Computing (AWS/GCP)
-        description: ''
-        percent: 85
-        icon: cloud
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking in the Rockies
-        description: ''
-        percent: 80
-        icon: person-simple-walk
-      - name: Building Custom PCs
-        description: ''
+      - name: Database Design & Management
+        description: '데이터베이스 구조 설계 및 관리 능력. SQL과 데이터 모델링에 대한 이해를 바탕으로 효율적인 데이터 처리 구조를 구현합니다.'
         percent: 90
-        icon: cpu-chip
-      - name: Sci-Fi Reading
-        description: ''
-        percent: 70
-        icon: book-open
+        icon: database
+
+      - name: Web Service Architecture
+        description: '사용자 중심의 웹 서비스 구조를 설계하고, 백엔드 로직 및 데이터 흐름을 효율적으로 구성합니다.'
+        percent: 85
+        icon: globe
+
+      - name: ADsP Certification
+        description: '데이터 분석 준전문가(ADsP) 자격증 취득 — 데이터 분석 기초, 통계 기법, 분석 프로세스에 대한 이해.'
+        percent: 100
+        icon: award
+
+  - name: Hobby
+    color: '#32a852'
+    color_border: '#2b9348'
+    items:
+      - name: Running
+        description: '런닝을 통해 집중력과 체력을 유지하며, 꾸준한 자기 관리의 중요성을 실천합니다.'
+        percent: 90
+        icon: person-simple-walk
+
 
 languages:
   - name: English
