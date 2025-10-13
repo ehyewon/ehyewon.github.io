@@ -162,7 +162,10 @@ sections:
       count: 5
       filters:
         folders: 
-          - jbnu
+          - jbnu/homepage
+          - jbnu/jbedu
+          - jbnu/lms
+          - jbnu/oasis
       offset: 0
       order: desc
     design:
