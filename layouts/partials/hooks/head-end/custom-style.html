@@ -1,1 +1,72 @@
-<link rel="stylesheet" href="/css/custom.css">
+<!-- layouts/partials/hooks/head-end/custom-style.html -->
+<style>
+/* 🧱 Hugo 기본 Tailwind 반응형 + 보조 스타일 */
+
+/* 이미지 자동 조절 */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* 컨테이너 (가운데 정렬 및 여백) */
+.container, section {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 텍스트 정리 */
+p, h1, h2, h3, h4, h5 {
+  word-break: keep-all;
+  line-height: 1.6;
+}
+
+/* 버튼 스타일 (테마 컬러 유지하면서 hover 효과 추가) */
+button, a.button {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+button:hover, a.button:hover {
+  background: #1e40af;
+}
+
+/* 📱 태블릿 이하 */
+@media (max-width: 768px) {
+  .hero, .grid, .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  p  { font-size: 1rem; }
+
+  section {
+    padding: 1rem;
+  }
+
+  img {
+    border-radius: 0.4rem;
+  }
+}
+
+/* 📱 모바일 */
+@media (max-width: 480px) {
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
+  p  { font-size: 0.95rem; }
+}
+
+/* 💻 큰 화면 */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+</style>
