@@ -15,7 +15,7 @@ sections:
       text: ""
       button:
         text: 이력서 다운받기
-        url: uploads/resume.pdf
+        url: C:\Users\a0103\ehyewon.github.io\static\uploads\resume.pdf
     design:
       css_class: dark
       background:
