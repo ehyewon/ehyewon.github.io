@@ -9,7 +9,7 @@ design:
 sections:
   - block: resume-experience
     content:
-      username: admin
+      username: hyewon
     design:
       date_format: 'January 2006'
       is_education_first: false
@@ -17,17 +17,17 @@ sections:
   - block: resume-skills
     content:
       title: "보유 기술 및 취미"
-      username: admin
+      username: hyewon
     design:
       show_skill_percentage: false
 
   - block: resume-awards
     content:
       title: "수상 경력"
-      username: admin
+      username: hyewon
 
   - block: resume-languages
     content:
       title: "사용 언어"
-      username: admin
+      username: hyewon
 ---

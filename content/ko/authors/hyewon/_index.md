@@ -79,7 +79,6 @@ education:
       url: 'http://soongil.gen.hs.kr/'
 
 work:
-  title:
   - position: 학부 학생
     company_name: 전북대학교 컴퓨터인공지능학부
     company_url: 'https://csai.jbnu.ac.kr/'

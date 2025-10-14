@@ -11,7 +11,7 @@ sections:
 
   - block: resume-biography-3
     content:
-      username: admin
+      username: hyewon
       text: ""
       button:
         text: 이력서 다운받기
