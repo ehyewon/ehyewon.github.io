@@ -20,9 +20,9 @@ links:
     url: /files/pygame.pdf
 ---
 이 프로젝트는 **Python의 Pygame 라이브러리**를 활용해  
-간단한 미니게임(예: 벽돌깨기, 슈팅게임 등)을 개발한 
+간단한 미니게임을 개발한 프로젝트입니다. 스페이스 바로 총을 쏘고 점프와 컨트롤로 악당을 죽이는 게임입니다.
 
-프로젝트입니다. 그 당시 담당 교수님이셨던 홍득조 교수님을 마지막 악당 보스로 넣어 재미를 더했습니다.
+그 당시 담당 교수님이셨던 홍득조 교수님을 마지막 악당 보스로 넣어 재미를 더했습니다.
 
 (그러나 게임 난이도를 어렵게 설정해 보스 교수님을 게임 내에서 이길 수 없습니다. 혹시 이 게임을 클리어하시거나 보스를 만나는데 성공하셨다면 저에게 연락주세요. 소원을 이루어 드리겠습니다.)
 
@@ -45,7 +45,7 @@ links:
 ### 💾 게임 실행 파일 다운로드
 
 <a href="/files/poop.py" download style="display:inline-block;padding:10px 18px;background-color:#2563eb;color:white;border-radius:8px;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
-  ▶ Pygame 실행 파일 다운로드 (.py)
+  ▶ Pygame 플레이 해보기 (.py)
 </a>
 
 ---
