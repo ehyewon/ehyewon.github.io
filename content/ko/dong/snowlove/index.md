@@ -2,13 +2,12 @@
 title: "눈사랑"
 subtitle: "전북대 스키 동아리"
 date: 2025-10-15
-summary: ""
+summary: "전북대 눈사랑 스키·보드 동아리입니다."
 type: dong
 layout: single
 featured: true
 show_author: false
 
-# 🔹 카드용 정적 이미지 (카드 썸네일 전용)
 image:
   filename: featured.jpg
   preview_only: true
@@ -27,7 +26,7 @@ keywords:
 ---
 
 <div class="flex justify-center my-6">
-  <img src="/images/snow.gif"
+  <img src="snow.gif"
        alt="눈사랑 스키 동아리 대표 이미지"
        class="rounded-2xl shadow-lg w-96">
 </div>
@@ -36,5 +35,5 @@ keywords:
 
 ### 🏂 주요 활동
 - 매년 겨울 정기 스키 캠프  
-- 초보자 대상 장비 교육 및 강습
+- 초보자 대상 장비 교육 및 강습  
 - 아이스링크장 가기  

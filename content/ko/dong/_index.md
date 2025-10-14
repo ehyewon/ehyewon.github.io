@@ -7,17 +7,16 @@ design:
 
 sections:
   - block: collection
+    id: dong-section
     content:
-      title: "전북대학교 중앙동아리"
-      text: "제가 활동했던 그리고 활동중인 동아리입니다."
+      title: "🏫 전북대학교 동아리"
+      subtitle: "다양한 활동을 통해 성장하는 JBNU 동아리 문화를 만나보세요!"
+      count: 3
       filters:
         folders:
           - dong
     design:
-      view: citation 
-      columns: 3           # 3열
-      fill_image: true     # 카드에 이미지 채우기
-      show_date: false
-      show_read_time: false
-      show_read_more: false
+      view: community/grid   # 기본 Hugo 카드형 뷰
+      columns: '3'           # 3열로 배치
+      spacing: "3rem"
 ---
