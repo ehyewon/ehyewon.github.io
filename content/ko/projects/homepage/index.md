@@ -12,3 +12,4 @@ show_author: false
 image:
   filename: featured.jpg
   preview_only: false
+---
