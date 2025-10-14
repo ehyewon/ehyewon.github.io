@@ -15,11 +15,6 @@ sections:
       filters:
         folders:
           - dong
-    design:
-      view: card 
-      columns: 3           
-    spacing:
-      padding: ["3rem", "3rem", "3rem", "3rem"] 
 ---
 
 
