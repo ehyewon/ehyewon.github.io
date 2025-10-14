@@ -16,7 +16,8 @@ sections:
         folders:
           - dong
     design:
-      view: article-grid   # 기본 Hugo 카드형 뷰
+      view: community/custom_card   # 기본 Hugo 카드형 뷰
       columns: '3'           # 3열로 배치
-      spacing: "3rem"
+    spacing:
+      padding: ["3rem", "3rem", "3rem", "3rem"] 
 ---
