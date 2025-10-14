@@ -28,3 +28,6 @@ links:
 
 - 개발 언어: Python  
 - 주요 라이브러리: Pygame  
+---
+
+(/images/pygame.jpg)
