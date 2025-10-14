@@ -14,7 +14,7 @@ sections:
         folders:
           - jbnu
     design:
-      view: article-grid
+      view: portfolio
       columns: 4
       fill_image: true
       show_date: false
