@@ -16,8 +16,8 @@ sections:
         folders:
           - dong
     design:
-      view: card   # 기본 Hugo 카드형 뷰
-      columns: 3           # 3열로 배치
+      view: card 
+      columns: 3           
     spacing:
       padding: ["3rem", "3rem", "3rem", "3rem"] 
 ---
