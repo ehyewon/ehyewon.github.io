@@ -57,7 +57,7 @@
 
 <p align="center">
   📧 <b>Email:</b> <a href="mailto:leehyewon04@naver.com">leehyewon04@naver.com</a> <br>
-  📱 <b>Phone:</b> +82 10-4211-0034 <br>
+  📱 <b>Phone:</b> +82 10-3317-1516 <br>
   🌐 <b>Website:</b> <a href="https://ehyewon.github.io">ehyewon.github.io</a>
 </p>
 
