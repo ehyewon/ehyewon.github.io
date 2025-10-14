@@ -1,5 +1,5 @@
 ---
-title: "동아리 소개"
+title: "동아리"
 type: landing
 
 design:
@@ -20,4 +20,5 @@ sections:
       show_date: false
       show_read_time: false
       show_read_more: false
+      css_class: "rounded-2xl shadow-lg hover:shadow-xl transition duration-300"
 ---
