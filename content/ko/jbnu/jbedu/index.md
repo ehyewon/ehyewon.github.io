@@ -18,5 +18,4 @@ links:
     name: "JEduTools 바로가기"
     url: https://jedutools.jbnu.ac.kr/
 ---
-전북대학교 e-Class 시스템에서는  
-온라인 강의, 과제, 토론 등 학습 활동을 진행할 수 있습니다.
+전북대학교 JEduTools에서는 JBNU JEduTools에서 제공하는 다양한 학습 및 개발 지원 도구들을 사용해 SW 학습을 할 수 있습니다.
