@@ -1,13 +1,25 @@
 ---
-title: 동아리
-cms_exclude: true
-url: talks
+title: "동아리"
+type: landing
 
-# View
-view: card
+design:
+  spacing: '4rem'
 
-# Optional cover image (relative to `assets/media/` folder).
-image:
-  caption: ''
-  filename: ''
+sections:
+  - block: collection
+    id: dong-section
+    content:
+      title: "🏫 전북대학교 동아리"
+      subtitle: "다양한 활동을 통해 성장하는 JBNU 동아리 문화를 만나보세요!"
+      count: 3
+      filters:
+        folders:
+          - dong
+    design:
+      view: card   # 기본 Hugo 카드형 뷰
+      columns: 3           # 3열로 배치
+    spacing:
+      padding: ["3rem", "3rem", "3rem", "3rem"] 
 ---
+
+
