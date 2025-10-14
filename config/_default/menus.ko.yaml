@@ -13,7 +13,7 @@ main:
     weight: 11
 
   - name: 뉴스
-    url: /#news
+    url: /#talks
     weight: 12
 
   - name: 전북대
