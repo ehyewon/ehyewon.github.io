@@ -24,10 +24,13 @@ links:
 
 프로젝트입니다. 그 당시 담당 교수님이셨던 홍득조 교수님을 마지막 악당 보스로 넣어 재미를 더했습니다.
 
+(그러나 게임 난이도가 너무 어려워 정작 보스 교수님을 게임 내에서 만나뵐 수 없는 문제가 생겼습니다.. 혹시 이 게임을 클리어하시거나 보스를 만나는데 성공하셨다면 저에게 연락주세요. 선물을 드리겠습니다.)
+
 저는 생명 넣기, 게임에 있는 모든 이미지와 그림을 담당했습니다.
 
 - 개발 언어: Python  
-- 주요 라이브러리: Pygame  
+- 주요 라이브러리: Pygame 
+
 ---
 
 ![그림 및 배경 이미지](/images/pygame.jpg)
@@ -38,3 +41,11 @@ links:
   <source src="/videos/pygame.mp4" type="video/mp4">
   브라우저가 video 태그를 지원하지 않습니다.
 </video>
+
+### 💾 게임 실행 파일 다운로드
+
+<a href="/files/poop.py" download style="display:inline-block;padding:10px 18px;background-color:#2563eb;color:white;border-radius:8px;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+  ▶ Pygame 실행 파일 다운로드 (.py)
+</a>
+
+---
