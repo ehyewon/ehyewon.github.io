@@ -16,6 +16,14 @@ marketing:
     local_business_type: ''
     org_name: '전북대학교'
     description: '이혜원의 홈페이지'
+    keywords:
+    - 이혜원
+    - 전북대학교
+    - jbnu
+    - jeonbuk National University
+    - 컴퓨터인공지능학부
+    - 포트폴리오
+    - AI
   analytics:
     google_analytics: ''
     baidu_tongji: ''
