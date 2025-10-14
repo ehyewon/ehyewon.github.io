@@ -1,27 +1,22 @@
 ---
-title: '프로젝트'
-cascade:
-  language: ko
-date: 2024-05-19
+title: "프로젝트"
 type: landing
 
 design:
-  # Section spacing
   spacing: '5rem'
 
-# Page sections
 sections:
   - block: collection
     content:
-      title: 프로젝트
-      text: 저의 프로젝트 입니다.
+      title: "프로젝트"
+      text: "저의 프로젝트입니다."
       filters:
         folders:
           - projects
     design:
-      view: article-grid
-      fill_image: false
-      columns: 3
+      view: article-grid   # 카드형
+      columns: 3           # 3열
+      fill_image: true     # 카드에 이미지 채우기
       show_date: false
       show_read_time: false
       show_read_more: false
