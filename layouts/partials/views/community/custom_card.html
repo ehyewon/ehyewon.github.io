@@ -1,15 +1,58 @@
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-  {{ range .Pages }}
-    <a href="{{ .RelPermalink }}" class="group relative block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
-      {{ with .Params.image }}
-        <img src="{{ .filename | relURL }}" alt="{{ $.Title }}" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
-      {{ end }}
-      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center text-center p-4">
-        <h3 class="text-white text-lg font-semibold mb-1">{{ .Title }}</h3>
-        {{ with .Params.subtitle }}
-          <p class="text-gray-200 text-sm">{{ . }}</p>
-        {{ end }}
-      </div>
-    </a>
+{{ $entry := .item }}
+{{ $attachments_exist := partial "functions/has_attachments" $entry }}
+
+{{ $url := $entry.RelPermalink }}
+{{ $open_in_new_tab := "" }}
+{{ if $entry.Params.external_link }}
+  {{ $url = $entry.Params.external_link }}
+  {{ $open_in_new_tab = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+
+{{/* 요약 정보 가져오기 */}}
+{{ $excerpt := "" }}
+{{ if $entry.Params.summary }}
+  {{ $excerpt = $entry.Params.summary | markdownify | emojify }}
+{{ else if $entry.Params.abstract }}
+  {{ $excerpt = $entry.Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
+{{ else if $entry.Summary }}
+  {{ $excerpt = $entry.Summary }}
+{{ end }}
+
+{{ $thumbnail := partial "blox-core/functions/get_featured_image.html" $entry }}
+
+<div class="card-container">
+  {{ with $thumbnail }}
+  {{ $image_resized := .Resize "550x" }}
+  {{ if ne $image_resized.MediaType.SubType "gif" }}{{ $image_resized = $image_resized.Process "webp" }}{{ end }}
+  <a href="{{ $url }}" {{ $open_in_new_tab | safeHTMLAttr }} class="image-link overlay-hover">
+    <img src="{{ $image_resized.RelPermalink }}" height="{{ $image_resized.Height }}" width="{{ $image_resized.Width }}"
+         alt="{{ $entry.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
+  </a>
   {{ end }}
+  <div class="content-container">
+    <div class="heading subheading article-title mb-1 mt-3">
+        <h4><a href="{{ $url }}" {{ $open_in_new_tab | safeHTMLAttr }}>{{ $entry.Title | markdownify | emojify }}</a></h4>
+    </div>
+    
+
+    {{ if $entry.Params.authors }}
+    <div class="metadata">
+        <div>
+            {{ partial "page_metadata_authors" $entry }}
+        </div>
+    </div>
+    {{ end }}
+
+    {{ with $excerpt }}
+    <div class="summary-container">
+      <p>{{ . }}</p>
+    </div>
+    {{ end }}
+
+    {{ if $attachments_exist }}
+    <div class="links-container">
+      {{ partial "page_links" (dict "page" $entry "is_list" 1) }}
+    </div>
+    {{ end }}
+  </div>
 </div>
