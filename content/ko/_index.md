@@ -152,8 +152,8 @@ sections:
         folders:
           - dong  
     design:
-      view: article-grid
-      columns: 4
+      view: community/custom_card
+      columns: 3
           
   - block: collection
     id: jbnu

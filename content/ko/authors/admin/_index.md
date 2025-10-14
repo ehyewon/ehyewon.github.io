@@ -79,6 +79,7 @@ education:
       url: 'http://soongil.gen.hs.kr/'
 
 work:
+  title:
   - position: 학부 학생
     company_name: 전북대학교 컴퓨터인공지능학부
     company_url: 'https://csai.jbnu.ac.kr/'
@@ -91,7 +92,7 @@ work:
 
   - position: 학생회 활동
     company_name: 전북대학교 컴퓨터인공지능학부 학생회
-    company_url: 'https://csai.jbnu.ac.kr/'
+    company_url: ''
     company_logo: ''
     date_start: 2023-03-01
     date_end: ''
