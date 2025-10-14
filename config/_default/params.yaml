@@ -75,3 +75,12 @@ features:
       latitude: 35.8465
       longitude: 127.1293
 
+ignoreLogs: [
+  'missing-icon-hero-database',
+  'missing-icon-hero-globe',
+  'missing-icon-hero-award',
+  'missing-icon-hero-laptop',
+  'missing-icon-hero-school',
+  'missing-icon-hero-file-pdf'
+]
+
