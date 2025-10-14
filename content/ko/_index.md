@@ -158,7 +158,7 @@ sections:
   - block: collection
     id: jbnu
     content:
-      title: 전북대 ''
+      title: 전북대
       filters:
         folders:
           - jbnu

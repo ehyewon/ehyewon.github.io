@@ -14,7 +14,7 @@ sections:
         folders:
           - dong
     design:
-      view: article-grid   # 카드형
+      view: card  # 카드형
       columns: 3           # 3열
       fill_image: true     # 카드에 이미지 채우기
       show_date: false
