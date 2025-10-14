@@ -31,7 +31,6 @@ sections:
         size: medium
         shape: circle
 
-  # 🖼️ 이미지 슬라이드 (홈 메인용)
 # 🖼️ 이미지 슬라이드 (홈 메인용)
   - block: markdown
     content:
@@ -122,7 +121,7 @@ sections:
 
   - block: markdown
     content:
-      title: '📚 Introduce'
+      title: '📚 소개글'
       subtitle: ''
       text: |-
         안녕하세요. 웹 개발자를 희망하는 이혜원입니다.  
@@ -171,12 +170,21 @@ sections:
     content:
       title: 🚀 저의 프로젝트가 궁금하시다면?
       text: |-
-        지금까지 작업한 저의 여러 프로젝트들을 포트폴리오에서 만나보실 수 있습니다. 
+        지금까지 작업한 저의 여러 프로젝트들을 포트폴리오에서 만나보실 수 있습니다.
       button:
         text: 클릭!
         url: projects/
     design:
       card:
-        css_class: ""
-        css_style: ""
+        css_class: "rounded-3xl shadow-2xl text-center hover:scale-[1.03] transition-all duration-300 ease-out"
+        css_style: |
+          background: linear-gradient(135deg, #4f6ef7 0%, #3d9df7 100%);
+          color: white;
+          padding: 3rem 2rem;
+          box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+        button:
+          css_class: "mt-6 px-6 py-3 rounded-xl font-semibold shadow-md bg-white text-blue-600 transition-all duration-300 ease-out hover:bg-blue-600 hover:text-white hover:shadow-lg hover:scale-105"
+
 ---
