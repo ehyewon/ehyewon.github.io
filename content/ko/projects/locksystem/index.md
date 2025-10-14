@@ -1,6 +1,6 @@
 ---
-title: "리눅스 사물함만들기 시스템 프로젝트"
-subtitle: "파일 잠금 시스템 구현"
+title: "리눅스 사물함 시스템"
+subtitle: "서버-클라이언트 사물함 시스템 구현"
 date: 2025-06-10
 summary: "C 언어 기반 사물함 시스템 구현 프로젝트"
 type: project
