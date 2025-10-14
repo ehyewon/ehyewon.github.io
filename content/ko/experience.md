@@ -9,6 +9,7 @@ design:
 sections:
   - block: resume-experience
     content:
+      title: 활동 및 경험
       username: hyewon
     design:
       date_format: 'January 2006'

@@ -14,7 +14,7 @@ sections:
         folders:
           - dong
     design:
-      view: card  # 카드형
+      view: citation 
       columns: 3           # 3열
       fill_image: true     # 카드에 이미지 채우기
       show_date: false
