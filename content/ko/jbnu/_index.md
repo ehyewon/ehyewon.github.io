@@ -14,7 +14,7 @@ sections:
         folders:
           - jbnu
     design:
-      view: community/custom_card
+      view: custom_card
       columns: 4
       fill_image: true
       show_date: false
