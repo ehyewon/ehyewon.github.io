@@ -30,4 +30,11 @@ links:
 - 주요 라이브러리: Pygame  
 ---
 
-(/images/pygame.jpg)
+![그림 및 배경 이미지](/images/pygame.jpg)
+
+### 🎮 게임 플레이 영상
+
+<video controls width="600" style="border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.15);display:block;margin:0 auto;">
+  <source src="/videos/pygame.mp4" type="video/mp4">
+  브라우저가 video 태그를 지원하지 않습니다.
+</video>
