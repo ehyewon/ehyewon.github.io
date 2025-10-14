@@ -17,7 +17,7 @@ sections:
           - dong
     design:
       view: community/custom_card   # 기본 Hugo 카드형 뷰
-      columns: '3'           # 3열로 배치
+      columns: 3           # 3열로 배치
     spacing:
       padding: ["3rem", "3rem", "3rem", "3rem"] 
 ---
