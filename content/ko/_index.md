@@ -176,15 +176,10 @@ sections:
         url: projects/
     design:
       card:
-        css_class: "rounded-3xl shadow-2xl text-center hover:scale-[1.03] transition-all duration-300 ease-out"
-        css_style: |
-          background: linear-gradient(135deg, #4f6ef7 0%, #3d9df7 100%);
-          color: white;
-          padding: 3rem 2rem;
-          box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-          transition: all 0.3s ease-in-out;
-          cursor: pointer;
+        css_class: "rounded-3xl shadow-xl text-center bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 transition-all duration-300 ease-out"
+        css_style: "padding: 3rem 2rem;"
         button:
-          css_class: "mt-6 px-6 py-3 rounded-xl font-semibold shadow-md bg-white text-blue-600 transition-all duration-300 ease-out hover:bg-blue-600 hover:text-white hover:shadow-lg hover:scale-105"
+          css_class: "mt-6 px-6 py-3 rounded-lg font-semibold bg-white text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 ease-in-out"
+
 
 ---
