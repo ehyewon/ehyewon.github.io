@@ -152,15 +152,13 @@ sections:
         folders:
           - dong  
     design:
-      view: community/custom_card
+      view: article-grid
       columns: 3
           
   - block: collection
     id: jbnu
     content:
-      title: 전북대
-      subtitle: ''
-      text: ''
+      title: 전북대 ''
       filters:
         folders:
           - jbnu
