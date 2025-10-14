@@ -147,10 +147,10 @@ sections:
   - block: collection
     id: talks
     content:
-      title: 뉴스
+      title: 동아리
       filters:
         folders:
-          - news     
+          - dong  
     design:
       view: article-grid
       columns: 4

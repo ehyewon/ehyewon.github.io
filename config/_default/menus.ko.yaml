@@ -12,7 +12,7 @@ main:
     url: /#papers
     weight: 11
 
-  - name: 뉴스
+  - name: 동아리
     url: /#talks
     weight: 12
 
