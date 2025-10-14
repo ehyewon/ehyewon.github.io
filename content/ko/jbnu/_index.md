@@ -9,15 +9,16 @@ sections:
   - block: collection
     content:
       title: "전북대학교 바로가기"
-      text: "전북대학교 관련 주요 사이트를 한 곳에서 모아볼 수 있습니다."
+      text: "전북대학교의 주요 사이트들을 한 곳에서 모아볼 수 있습니다."
       filters:
         folders:
           - jbnu
     design:
-      view: custom_card
+      view: community/custom_card
       columns: 4
       fill_image: true
       show_date: false
       show_read_time: false
       show_read_more: false
+      css_class: "rounded-2xl shadow-lg hover:shadow-xl transition duration-300"
 ---

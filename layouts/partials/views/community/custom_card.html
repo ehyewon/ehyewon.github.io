@@ -1,11 +1,11 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
   {{ range .Pages }}
-    <a href="{{ .RelPermalink }}" class="group block relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+    <a href="{{ .RelPermalink }}" class="group relative block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
       {{ with .Params.image }}
         <img src="{{ .filename | relURL }}" alt="{{ $.Title }}" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
       {{ end }}
       <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center text-center p-4">
-        <h3 class="text-white text-xl font-semibold mb-2">{{ .Title }}</h3>
+        <h3 class="text-white text-lg font-semibold mb-1">{{ .Title }}</h3>
         {{ with .Params.subtitle }}
           <p class="text-gray-200 text-sm">{{ . }}</p>
         {{ end }}
