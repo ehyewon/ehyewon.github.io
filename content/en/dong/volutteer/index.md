@@ -1,5 +1,5 @@
 ---
-title: "Valutteer"
+title: "Volutteer"
 summary: "Sharing hearts, growing together — a volunteer club 💕"
 date: 2025-10-15
 type: dong
