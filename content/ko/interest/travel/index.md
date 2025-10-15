@@ -40,6 +40,9 @@ image:
   <div>
     <img src="jeju3.jpg" alt="제주도3" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
   </div>
+    <div>
+    <img src="jeju4.jpg" alt="제주도4" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+  </div>
 </div>
 
 ---
@@ -62,6 +65,18 @@ image:
   <div>
     <img src="osaka2.jpg" alt="오사카2" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
   </div>
+    <div>
+    <img src="osaka3.jpg" alt="오사카3" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+  </div>
+  <div>
+    <img src="osaka4.jpg" alt="오사카4" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+  </div>
+    <div>
+    <img src="osaka5.jpg" alt="오사카5" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+  </div>
+  <div>
+    <img src="osaka6.jpg" alt="오사카6" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+  </div>
 </div>
 
 ---
@@ -78,6 +93,19 @@ image:
   </div>
   <div>
     <img src="kyoto2.jpg" alt="교토2" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+  </div>
+</div>
+  <div>
+    <img src="kyoto3.jpg" alt="교토3" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+  </div>
+  <div>
+    <img src="kyoto4.jpg" alt="교토4" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+  </div>
+    <div>
+    <img src="kyoto5.jpg" alt="교토5" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+  </div>
+  <div>
+    <img src="kyoto6.jpg" alt="교토6" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
   </div>
 </div>
 
