@@ -1,39 +1,21 @@
 ---
-title: "눈사랑"
-subtitle: "전북대 스키 동아리"
+title: "눈사랑 (SnowLove)"
+summary: "스키와 보드를 사랑하는 사람들의 모임 ⛷️"
 date: 2025-10-15
-summary: "전북대 눈사랑 스키·보드 동아리입니다."
 type: dong
 layout: single
-featured: true
-show_author: false
 
+# 카드 이미지
+featured: true
 image:
   filename: featured.jpg
-  preview_only: true
+  caption: "SnowLove Ski & Board Club"
 
-keywords:
-  - 눈사랑
-  - 전북대학교
-  - 스키동아리
-  - 겨울스포츠
-  - JBNU
----
-눈사랑은 전북대학교를 대표하는 **스키 & 보드 동아리**입니다.  
-겨울마다 함께 강원도나 무주로 스키를 타러갑니다.  
-초보자들도 안전하게 배울 수 있는 환경을 제공합니다. 🎿  
-
+# 상세 페이지 대표 이미지
+banner:
+  image: snow.gif
+  caption: "눈 위의 자유, SnowLove!"
 ---
 
-<div class="flex justify-center my-6">
-  <img src="snow.gif"
-       alt="눈사랑 스키 동아리 대표 이미지"
-       class="rounded-2xl shadow-lg w-96">
-</div>
-
----
-
-### 🏂 주요 활동
-- 매년 겨울 정기 스키 캠프  
-- 초보자 대상 장비 교육 및 강습  
-- 아이스링크장 가기  
+눈사랑은 전북대학교 스키 & 보드 중앙동아리로, 겨울마다 스키캠프를 비롯한 다양한 활동을 진행하고 있습니다.  
+초보자부터 전문가까지 함께 즐길 수 있는 동아리로, 설원을 누비며 함께 추억을 만들어가요. 🎿

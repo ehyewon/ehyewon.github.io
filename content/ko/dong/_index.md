@@ -1,20 +1,16 @@
 ---
 title: "동아리"
-type: landing
+type: page
+layout: section
 
-design:
-  spacing: '4rem'
+# 페이지 요약
+summary: "전북대학교의 다양한 동아리 활동을 만나보세요."
 
-sections:
-  - block: collection
-    id: dong-section
-    content:
-      title: "🏫 전북대학교 동아리"
-      subtitle: "다양한 활동을 통해 성장하는 JBNU 동아리 문화를 만나보세요!"
-      count: 3
-      filters:
-        folders:
-          - dong
+# 카드 형식으로 하위 콘텐츠 표시
+view: card
+cascade:
+  show_author: false
+  show_date: false
+  show_summary: true
+  view: compact
 ---
-
-
