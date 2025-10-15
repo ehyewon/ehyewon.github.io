@@ -15,7 +15,7 @@ appearance:
   font: classic
   font_size: M
   custom_css:
-    - scss/template.scss
+    - css/template.css
 
 
 # SEO
