@@ -7,6 +7,9 @@ type: project
 layout: single
 featured: true
 show_author: false
+
+keywords: ["이혜원", "전북대학교", "JBNU", "Hyewon Lee"]
+
 link:
     name: "홈페이지 코드"
     url: https://github.com/ehyewon/ehyewon.github.io/
