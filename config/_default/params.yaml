@@ -10,8 +10,8 @@
 favicon: icon.png
 
 appearance:
-  theme_day: skyblue
-  theme_night: dark
+  theme_day: forest
+  theme_night: coffee
 
 # SEO
 marketing:
