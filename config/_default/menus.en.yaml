@@ -1,0 +1,43 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+  #     desired widget in your `content/home/` folder.
+  #   The weight parameter defines the order that the links will appear in.
+
+main:
+  - name: My Information
+    url: /
+    weight: 10
+
+  - name: Interest
+    url: /#papers
+    weight: 11
+
+  - name: Club
+    url: /#talks
+    weight: 12
+
+  - name: Jbnu
+    url: /#jbnu
+    weight: 13
+
+  - name: Experience
+    url: experience/
+    weight: 20
+
+  - parent: Project
+    name: Pygame
+    url: projects/pygame
+    weight: 30
+  - parent: Project
+    name: Linux LockSystem
+    url: projects/locksystem
+    weight: 30
+  - parent: Project
+    name: Create A Homepage
+    url: projects/homepage
+    weight: 30
+
+
+  - name: Contact
+    url: contact/
+    weight: 40
