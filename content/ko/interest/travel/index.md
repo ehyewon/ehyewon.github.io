@@ -94,8 +94,7 @@ image:
   <div>
     <img src="kyoto2.jpg" alt="교토2" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
   </div>
-</div>
-  <div>
+    <div>
     <img src="kyoto3.jpg" alt="교토3" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
   </div>
   <div>
@@ -128,7 +127,9 @@ image:
   </div>
 </div>
 
+
 ---
   
+
 ![Unsplash Image](https://images.unsplash.com/photo-1468818438311-4bab781ab9b8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dHJpcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500)
 _Image credit: [Unsplash](https://unsplash.com)_
