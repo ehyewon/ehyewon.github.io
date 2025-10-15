@@ -10,8 +10,13 @@
 favicon: icon.png
 
 appearance:
-  theme_day: forest
-  theme_night: coffee
+  theme_day: ocean
+  theme_night: black
+  font: classic
+  font_size: M
+  custom_css:
+    - scss/template.scss
+
 
 # SEO
 marketing:
