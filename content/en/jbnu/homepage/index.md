@@ -8,6 +8,8 @@ layout: single
 featured: true
 show_author: false
 
+keywords: ["이혜원", "전북대학교", "JBNU", "Hyewon Lee"]
+
 image:
   filename: featured.jpg
   preview_only: false
