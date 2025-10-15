@@ -25,7 +25,7 @@ The player can move left and right with the arrow keys, jump, and shoot enemies 
 To add humor, my professor at the time, **Professor Hong Deukjo**, was featured as the final boss.  
 
 (However, I intentionally made the game difficult — it’s *impossible* to defeat the boss.  
-If you somehow manage to meet or beat the boss, please contact me. I’ll grant any wish you want 😆)
+If you somehow manage to beat the boss, please contact me. I’ll grant any wish you want 😆)
 
 I was responsible for the **life indicator, character movement, and all in-game images and drawings**.
 
