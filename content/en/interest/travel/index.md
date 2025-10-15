@@ -115,10 +115,8 @@ Next time I visit, I’ll definitely go to an onsen. ♨️
 
 ### Phuket
 
-I visited Phuket.  
-I was still in elementary school at the time, so my memories are a bit vague,  
-but I vividly remember enjoying snorkeling — it was so much fun.  
-The food wasn’t really to my taste, but looking back, even that became a good memory.
+I went to Phuket. 
+I was almost in elementary school, so my memories are hazy, but I vividly remember snorkeling in the beautiful ocean. The local food didn't suit my taste, so it was a bit difficult. But looking back, even that feels like a fond memory.
 
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
   <div>
