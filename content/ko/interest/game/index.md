@@ -26,8 +26,7 @@ PC보다는 온라인 게임을 주로 합니다.
 
 ## 🧩 **루미큐브 (Rummikub)**
 
-두뇌 싸움 보드게임으로, 숫자와 색깔을 이용해 조합을 만들어가는 재미가 있습니다.  
-가볍게 즐기면서도 집중력을 요하는 전략적인 게임입니다.
+두뇌 싸움 보드게임으로, 숫자와 색깔을 이용해 조합을 만들어가는 재미가 있습니다. 가볍게 즐기면서도 집중력을 요하는 전략적인 게임입니다.
 
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
 
@@ -77,3 +76,80 @@ PC보다는 온라인 게임을 주로 합니다.
 
 ![Unsplash Image](https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500)
 _Image credit: [Unsplash](https://unsplash.com)_
+
+---
+
+<!-- 🔍 이미지 클릭 확대 (모달) 효과 추가 -->
+<style>
+  /* 모달 배경 */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+
+  /* 모달 안의 이미지 */
+  .modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    animation: fadeIn 0.25s ease;
+  }
+
+  /* 애니메이션 */
+  @keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.95);}
+    to {opacity: 1; transform: scale(1);}
+  }
+
+  /* 닫기 버튼 */
+  .modal-close {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .modal-close:hover {
+    color: #ff5252;
+  }
+</style>
+
+<!-- 모달 HTML -->
+<div id="imgModal" class="modal" onclick="this.style.display='none'">
+  <span class="modal-close">&times;</span>
+  <img id="modalImage" alt="확대 이미지">
+</div>
+
+<!-- JavaScript: 이미지 클릭 시 확대 -->
+<script>
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImage");
+  const closeBtn = document.querySelector(".modal-close");
+
+  document.querySelectorAll(".zoomable").forEach(img => {
+    img.addEventListener("click", (e) => {
+      e.stopPropagation();
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+    });
+  });
+
+  closeBtn.addEventListener("click", () => modal.style.display = "none");
+  modal.addEventListener("click", () => modal.style.display = "none");
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") modal.style.display = "none";
+  });
+</script>
