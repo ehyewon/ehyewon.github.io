@@ -1,37 +1,32 @@
-// Make page header alignment consistent with widget page header alignment
-.universal-wrapper h1 {
-  text-align: center;
+/* 🌈 네비게이션 hover 효과 (HugoBlox 테마용) */
+.navbar-nav .nav-link:hover,
+.navbar .nav-item:hover > a,
+.navbar .nav-link.active,
+.navbar a.nav-link[aria-current="page"] {
+  background-color: #87CEEB !important; /* 하늘색 */
+  color: #ffffff !important;             /* 글씨 흰색 */
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-// Center the CTA shortcode button
-.cta-group {
-  justify-content: center;
+/* 메뉴 간 간격 유지 */
+.navbar-nav .nav-link {
+  margin: 0 6px;
+  padding: 10px 18px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 6px;
 }
 
-.navbar a {
-  padding: 10px 20px;        
-  border-radius: 5px;        
-  transition: all 0.4s ease;
-}
-
-.navbar a:hover {
-  background-color: #B0E0E6; 
-  color: #ffffff !important; 
-  transform: scale(1.05);    
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-}
-
+/* 기본 navbar 중앙 정렬 */
 .navbar {
-  display: flex;             
-  justify-content: center;    
-  align-items: center;         
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar ul {
-  display: flex;
-  gap: 20px;                 
-  padding: 0;
-  margin: 0;
-  list-style: none;         
-  text-align: center;
+/* 상단 전체 배경 */
+.header {
+  background-color: #fff !important;
+  border-bottom: 2px solid #5A3B13; /* 갈색 라인 유지 */
 }
