@@ -55,7 +55,7 @@ PC보다는 온라인 게임을 주로 합니다.
 
 ## 🎯 **카트라이더 (KartRider)**
 
-스피드전, 아이템전 등 다양한 모드로 즐길 수 있는 레이싱 게임입니다. 빠른 손놀림과 판단력이 요구되며 여러 사람들과 같이 플레이할 수 있습니다.
+스피드전, 아이템전 등 다양한 모드로 즐길 수 있는 레이싱 게임입니다. 빠른 손놀림과 판단력이 요구되며 여러 사람들과 같이 플레이할 수 있습니다. 저 상당히 잘합니다.
 
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
 
@@ -65,6 +65,10 @@ PC보다는 온라인 게임을 주로 합니다.
 
   <div>
     <img src="game4.jpg" alt="카트라이더2" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+  </div>
+
+  <div>
+    <img src="game5.jpg" alt="카트라이더3" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
   </div>
 
 </div>
