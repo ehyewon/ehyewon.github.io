@@ -1,5 +1,5 @@
 ---
-title: "Ballunteer"
+title: "Valutteer"
 summary: "Sharing hearts, growing together — a volunteer club 💕"
 date: 2025-10-15
 type: dong
@@ -12,5 +12,5 @@ image:
 ---
 
 <div class="text-justify">
-  Ballunteer is Jeonbuk National University's representative volunteer club, carrying out a variety of community service activities both on and off campus — including campus cleanups and volunteering at animal shelters.
+  Valutteer is Jeonbuk National University's representative volunteer club, carrying out a variety of community service activities both on and off campus — including campus cleanups and volunteering at animal shelters.
 </div>
