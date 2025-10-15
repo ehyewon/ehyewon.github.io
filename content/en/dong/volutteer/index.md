@@ -12,5 +12,5 @@ image:
 ---
 
 <div class="text-justify">
-  Valutteer is Jeonbuk National University's representative volunteer club, carrying out a variety of community service activities both on and off campus — including campus cleanups and volunteering at animal shelters.
+  Volutteer is Jeonbuk National University's representative volunteer club, carrying out a variety of community service activities both on and off campus — including campus cleanups and volunteering at animal shelters.
 </div>
