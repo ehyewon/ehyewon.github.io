@@ -20,6 +20,7 @@ marketing:
     local_business_type: ''
     org_name: '전북대학교'
     description: '이혜원의 홈페이지'
+    image: "uploads/avatar.jpg"
     keywords:
     - 이혜원
     - 전북대학교

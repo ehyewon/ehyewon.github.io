@@ -50,8 +50,11 @@ footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 disableAliases: true
 outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
-  section: [HTML, RSS]
+  home: [HTML, RSS, JSON]        # ✅ JSON 추가 (중요)
+  section: [HTML, RSS, JSON]
+  taxonomy: [HTML, RSS, JSON]
+  term: [HTML, RSS, JSON]
+  page: [HTML, RSS, JSON]
 imaging:
   resampleFilter: lanczos
   quality: 90
