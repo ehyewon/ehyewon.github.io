@@ -1,46 +1,68 @@
 /* =========================================
-   🌤️ Hover = 버튼형 반응 + 하늘색 강조 (#87CEEB)
+   🌤️ Global Hover + Glow Style (#87CEEB)
    ========================================= */
 
-/* 기본 전환 효과 공통 */
-a, button, .btn, .icon-button, .navbar .nav-link {
-  transition: all 0.25s ease;
+/* 공통 transition 부드럽게 */
+a,
+button,
+.btn,
+.icon-button,
+.navbar .nav-link,
+[class*="icon"] {
+  transition: all 0.25s ease !important;
 }
 
-/* 🌈 hover 시: 색 변하고 살짝 떠오르기 */
+/* 💫 Hover 시: 하늘색 + 살짝 떠오르기 + Glow */
 a:hover,
 button:hover,
 .btn:hover,
 .icon-button:hover,
 .navbar .nav-link:hover,
+.navbar a:hover,
+.nav-item a:hover,
 input[type="button"]:hover,
-input[type="submit"]:hover {
-  background-color: rgba(135, 206, 235, 0.2) !important; /* 하늘색 배경 */
-  color: #87CEEB !important; /* 텍스트나 아이콘 색 */
-  transform: translateY(-3px); /* 살짝 위로 */
-  box-shadow: 0 6px 14px rgba(135, 206, 235, 0.3); /* 부드러운 그림자 */
-  border-radius: 0.6rem;
-  cursor: pointer;
+input[type="submit"]:hover,
+svg:hover,
+i:hover {
+  background-color: rgba(135, 206, 235, 0.2) !important;
+  color: #87CEEB !important;
+  fill: #87CEEB !important;
+  transform: translateY(-3px) !important;
+  border-radius: 0.6rem !important;
+  cursor: pointer !important;
+  box-shadow:
+    0 6px 14px rgba(135, 206, 235, 0.3),
+    0 0 10px rgba(135, 206, 235, 0.4),
+    inset 0 0 4px rgba(135, 206, 235, 0.2) !important;
 }
 
-/* 클릭(눌림) 시: 살짝 눌려 들어가게 */
+/* 🔘 클릭(눌림) 시: 살짝 들어가기 */
 a:active,
 button:active,
 .btn:active,
 .icon-button:active,
 .navbar .nav-link:active,
 input[type="button"]:active,
-input[type="submit"]:active {
-  transform: translateY(1px) scale(0.97);
-  box-shadow: 0 3px 8px rgba(135, 206, 235, 0.25);
+input[type="submit"]:active,
+svg:active,
+i:active {
+  transform: translateY(1px) scale(0.97) !important;
+  box-shadow:
+    0 3px 8px rgba(135, 206, 235, 0.25),
+    0 0 8px rgba(135, 206, 235, 0.25) !important;
 }
 
-/* 🌓 다크모드용 튜닝 */
+/* 🌓 다크모드용 Glow 튜닝 */
 .dark a:hover,
 .dark button:hover,
 .dark .btn:hover,
-.dark .navbar .nav-link:hover {
+.dark .navbar .nav-link:hover,
+.dark svg:hover,
+.dark i:hover {
   background-color: rgba(135, 206, 235, 0.15) !important;
   color: #87CEEB !important;
-  box-shadow: 0 6px 14px rgba(135, 206, 235, 0.35);
+  fill: #87CEEB !important;
+  box-shadow:
+    0 6px 16px rgba(135, 206, 235, 0.5),
+    0 0 14px rgba(135, 206, 235, 0.6) !important;
 }
