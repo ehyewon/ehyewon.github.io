@@ -1,134 +1,50 @@
-/* ============================================================
-   🎨 JBNU Hanseo Theme – Unified Design (theme-research-group)
-   ============================================================ */
-
-/* ========== Global Base ========== */
-:root {
-  --primary: #87CEEB;           /* 메인 하늘색 포인트 */
-  --primary-light: rgba(135, 206, 235, 0.15);
-  --primary-dark: #5ea9c8;
-  --text-main: #222;
-  --bg-main: #fff;
-  --transition: all 0.25s ease;
-}
-
-/* 다크모드 전용 변수 */
-[data-theme='dark'],
-.dark {
-  --text-main: #f2f2f2;
-  --bg-main: #121212;
-  --primary-light: rgba(135, 206, 235, 0.25);
-}
-
-/* ========== Global Font ========== */
-body {
-  font-family: 'Noto Sans KR', 'Pretendard', sans-serif !important;
-  color: var(--text-main);
-  background-color: var(--bg-main);
-  transition: background-color 0.4s ease, color 0.4s ease;
-}
-
-/* ========== Buttons / Links ========== */
-button,
-.btn,
-a.button,
-input[type='button'],
-input[type='submit'] {
-  background-color: var(--primary-light);
-  border: 2px solid transparent;
-  color: var(--text-main);
-  padding: 0.5rem 1rem;
-  border-radius: 0.6rem;
-  transition: var(--transition);
-}
-
-/* Hover 상태 */
-button:hover,
-.btn:hover,
-a.button:hover,
-input[type='button']:hover,
-input[type='submit']:hover {
-  background-color: var(--primary);
-  color: #fff !important;
-  transform: translateY(-2px);
-  box-shadow:
-    0 6px 14px rgba(135, 206, 235, 0.4),
-    0 0 10px rgba(135, 206, 235, 0.4),
-    inset 0 0 4px rgba(135, 206, 235, 0.2);
-}
-
-/* 클릭 시 */
-button:active,
-.btn:active,
-a.button:active,
-input[type='button']:active,
-input[type='submit']:active {
-  transform: translateY(1px) scale(0.97);
-  box-shadow:
-    0 3px 8px rgba(135, 206, 235, 0.25),
-    0 0 8px rgba(135, 206, 235, 0.25);
-}
-
-/* ========== Navbar / Menu ========== */
-header .navbar .nav-link {
-  color: var(--text-main);
-  transition: var(--transition);
-  border-radius: 0.5rem;
-}
-
-header .navbar .nav-link:hover {
-  color: var(--primary) !important;
-  background-color: var(--primary-light) !important;
-  box-shadow: 0 4px 14px rgba(135, 206, 235, 0.3);
-  transform: translateY(-2px);
-}
-
-header .navbar .nav-link.active {
-  color: var(--primary) !important;
-}
-
-/* 다크모드 네비게이션 */
-.dark header .navbar .nav-link:hover {
-  background-color: var(--primary-light) !important;
-  color: var(--primary) !important;
-}
-
-/* ========== Cards (프로젝트/게시물) ========== */
-[class*='card'],
-.article-card,
-.project-card,
-.publication-card {
-  background-color: var(--bg-main);
-  border-radius: 1rem;
-  transition: var(--transition);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-[class*='card']:hover,
-.article-card:hover,
-.project-card:hover,
-.publication-card:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    0 16px 40px rgba(135, 206, 235, 0.3),
-    0 0 12px rgba(135, 206, 235, 0.25);
-}
-
-/* ========== Icon & SVG hover ========== */
-svg:hover,
-i:hover {
-  fill: var(--primary) !important;
-  color: var(--primary) !important;
-  transform: scale(1.1);
-  transition: var(--transition);
-}
-
-/* ========== Dark Mode Glow Accent ========== */
-.dark a:hover,
-.dark button:hover,
-.dark .btn:hover,
-.dark .navbar .nav-link:hover {
-  box-shadow:
-    0 6px 16px rgba(135, 206, 235, 0.5),
-    0 0 14px rgba(135, 206, 235, 0.6);
-}
+/* Project 페이지 특정 스타일 */
+.page-project {
+    /* 배경색 설정 (선택사항) */
+    background-color: #ffffff; /* 또는 원하는 배경색 */
+  }
+  
+  .page-project .section-heading,
+  .page-project .section-subheading,
+  .page-project p {
+    color: #333333 !important; /* 어두운 회색, 또는 원하는 색상으로 변경 가능 */
+  }
+  
+  .page-project .article-title a {
+    color: #1a1a1a !important; /* 거의 검정색, 또는 원하는 색상으로 변경 가능 */
+  }
+  
+  .page-project .article-style {
+    color: #4a4a4a !important; /* 중간 회색, 또는 원하는 색상으로 변경 가능 */
+  }
+  
+  /* 링크 색상 (선택사항) */
+  .page-project a:not(.article-title a) {
+    color: #0056b3 !important; /* 파란색, 또는 원하는 색상으로 변경 가능 */
+  }
+  
+  /* 호버 상태의 링크 색상 (선택사항) */
+  .page-project a:hover {
+    color: #003d82 !important; /* 진한 파란색, 또는 원하는 색상으로 변경 가능 */
+  }
+  
+  /* 버튼 스타일 (있는 경우) */
+  .page-project .btn {
+    color: #ffffff !important; /* 버튼 텍스트 색상 */
+    background-color: #0056b3 !important; /* 버튼 배경색 */
+  }
+  
+  /* 다크 모드에서도 같은 스타일 유지 */
+  @media (prefers-color-scheme: dark) {
+    .page-project,
+    .page-project .section-heading,
+    .page-project .section-subheading,
+    .page-project p,
+    .page-project .article-title a,
+    .page-project .article-style,
+    .page-project a:not(.article-title a),
+    .page-project .btn {
+      color: inherit !important;
+      background-color: inherit !important;
+    }
+  }
