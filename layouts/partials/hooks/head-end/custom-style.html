@@ -1,5 +1,6 @@
 <!-- layouts/partials/hooks/head-end/custom-style.html -->
 <style>
+
 /* 🧱 Hugo 기본 Tailwind 반응형 + 보조 스타일 */
 
 /* 이미지 자동 조절 */
@@ -7,10 +8,12 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 0.5rem;
+  transition: all 0.3s ease;
 }
 
 /* 컨테이너 (가운데 정렬 및 여백) */
-.container, section {
+.container,
+section {
   width: 90%;
   max-width: 1200px;
   margin: auto;
@@ -20,25 +23,131 @@ img {
 p, h1, h2, h3, h4, h5 {
   word-break: keep-all;
   line-height: 1.6;
+  color: #222;
 }
 
-/* 버튼 스타일 (테마 컬러 유지하면서 hover 효과 추가) */
-button, a.button {
+/* 제목 스타일 */
+h1 { font-weight: 700; }
+h2, h3 { font-weight: 600; }
+
+/* 버튼 기본 스타일 */
+button,
+a.button,
+.btn {
   display: inline-block;
-  background: #79dcee;
-  color: white;
+  background: rgba(135, 206, 235, 0.2);
+  color: #222;
   padding: 0.6rem 1.2rem;
-  border-radius: 0.4rem;
+  border-radius: 0.6rem;
+  border: 2px solid transparent;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
+  font-weight: 500;
+  cursor: pointer;
 }
-button:hover, a.button:hover {
-  background: #79dcee;
+
+/* 버튼 hover + glow */
+button:hover,
+a.button:hover,
+.btn:hover {
+  background-color: #87CEEB !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 14px rgba(135, 206, 235, 0.4),
+    0 0 10px rgba(135, 206, 235, 0.4),
+    inset 0 0 4px rgba(135, 206, 235, 0.2);
 }
+
+/* 버튼 클릭 시 */
+button:active,
+a.button:active,
+.btn:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow:
+    0 3px 8px rgba(135, 206, 235, 0.25),
+    0 0 8px rgba(135, 206, 235, 0.25);
+}
+
+/* 네비게이션 메뉴 hover */
+header .navbar .nav-link {
+  transition: all 0.25s ease;
+  border-radius: 0.5rem;
+}
+
+header .navbar .nav-link:hover {
+  color: #87CEEB !important;
+  background: rgba(135, 206, 235, 0.15) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(135, 206, 235, 0.25);
+}
+
+header .navbar .nav-link.active {
+  color: #87CEEB !important;
+}
+
+/* 카드류 공통 */
+[class*="card"],
+.article-card,
+.project-card,
+.publication-card {
+  background-color: white;
+  border-radius: 1rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+[class*="card"]:hover,
+.article-card:hover,
+.project-card:hover,
+.publication-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 16px 40px rgba(135, 206, 235, 0.3),
+    0 0 12px rgba(135, 206, 235, 0.25);
+}
+
+/* 아이콘 hover */
+svg:hover,
+i:hover {
+  fill: #87CEEB !important;
+  color: #87CEEB !important;
+  transform: scale(1.1);
+  transition: all 0.25s ease;
+}
+
+/* 다크모드 스타일 */
+.dark body {
+  background-color: #121212 !important;
+  color: #f2f2f2 !important;
+}
+
+.dark h1, .dark h2, .dark p {
+  color: #eaeaea !important;
+}
+
+.dark header .navbar .nav-link:hover {
+  background: rgba(135, 206, 235, 0.18) !important;
+  box-shadow:
+    0 6px 16px rgba(135, 206, 235, 0.5),
+    0 0 14px rgba(135, 206, 235, 0.6);
+}
+
+/* 카드 다크모드 */
+.dark [class*="card"],
+.dark .article-card,
+.dark .project-card {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+/* 반응형 대응 */
 
 /* 📱 태블릿 이하 */
 @media (max-width: 768px) {
-  .hero, .grid, .flex {
+  .hero,
+  .grid,
+  .flex {
     flex-direction: column;
     text-align: center;
   }
