@@ -1,63 +1,46 @@
 /* =========================================
-   🌤️ Global Hover Style — Sky Blue (#87CEEB)
+   🌤️ Hover = 버튼형 반응 + 하늘색 강조 (#87CEEB)
    ========================================= */
 
-/* 버튼 및 링크 hover 효과 */
+/* 기본 전환 효과 공통 */
+a, button, .btn, .icon-button, .navbar .nav-link {
+  transition: all 0.25s ease;
+}
+
+/* 🌈 hover 시: 색 변하고 살짝 떠오르기 */
 a:hover,
 button:hover,
 .btn:hover,
-.btn-primary:hover,
-.btn-slide:hover,
+.icon-button:hover,
+.navbar .nav-link:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  background-color: #87CEEB !important;
-  border-color: #87CEEB !important;
-  color: white !important;
-  transform: translateY(-2px) scale(1.04) !important;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18) !important;
-  transition: all 0.15s ease-in-out !important;
+  background-color: rgba(135, 206, 235, 0.2) !important; /* 하늘색 배경 */
+  color: #87CEEB !important; /* 텍스트나 아이콘 색 */
+  transform: translateY(-3px); /* 살짝 위로 */
+  box-shadow: 0 6px 14px rgba(135, 206, 235, 0.3); /* 부드러운 그림자 */
+  border-radius: 0.6rem;
+  cursor: pointer;
 }
 
-/* 카드류 공통 hover 효과 */
-[class*="card"]:hover,
-.article-card:hover,
-.project-card:hover,
-.publication-card:hover {
-  transform: translateY(-6px) !important;
-  box-shadow: 0 16px 40px rgba(135, 206, 235, 0.3) !important;
-  transition: all 0.2s ease-in-out !important;
+/* 클릭(눌림) 시: 살짝 눌려 들어가게 */
+a:active,
+button:active,
+.btn:active,
+.icon-button:active,
+.navbar .nav-link:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 3px 8px rgba(135, 206, 235, 0.25);
 }
 
-/* 네비게이션 메뉴 hover 효과 */
-header .navbar .nav-link {
-  transition: color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
-}
-
-header .navbar .nav-link:hover {
+/* 🌓 다크모드용 튜닝 */
+.dark a:hover,
+.dark button:hover,
+.dark .btn:hover,
+.dark .navbar .nav-link:hover {
+  background-color: rgba(135, 206, 235, 0.15) !important;
   color: #87CEEB !important;
-  background: rgba(135, 206, 235, 0.15) !important;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  text-decoration: none !important;
-}
-
-/* 현재 페이지(active) */
-header .navbar .nav-link.active,
-header .navbar .nav-link[aria-current='page'] {
-  color: #87CEEB !important;
-}
-
-/* 키보드 포커스 접근성 */
-header .navbar .nav-link:focus-visible {
-  outline: 2px solid #87CEEB !important;
-  outline-offset: 2px;
-  border-radius: 0.5rem;
-}
-
-/* 다크 모드 대응 */
-.dark header .navbar .nav-link:hover,
-[data-theme='dark'] header .navbar .nav-link:hover {
-  color: #87CEEB !important;
-  background: rgba(135, 206, 235, 0.18) !important;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 14px rgba(135, 206, 235, 0.35);
 }
