@@ -1,6 +1,7 @@
 ---
-title: "JBNU"
-type: landing
+title: "전북대학교 (Jeonbuk National University)"
+summary: "이혜원 학생의 소속 대학"
+keywords: ["이혜원", "전북대학교", "JBNU", "컴퓨터인공지능학부"]
 
 design:
   spacing: '4rem'
