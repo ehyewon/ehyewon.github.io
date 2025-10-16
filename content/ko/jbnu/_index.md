@@ -22,3 +22,7 @@ sections:
       show_read_more: false
       css_class: "rounded-2xl shadow-lg hover:shadow-xl transition duration-300"
 ---
+
+<span style="display:none">
+이혜원 JBNU 전북대학교 전북대 컴퓨터인공지능학부 학생 소개
+</span>
