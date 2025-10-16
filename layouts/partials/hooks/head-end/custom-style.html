@@ -179,3 +179,84 @@ i:hover {
   }
 }
 </style>
+
+<!-- 🟡 검색 결과 하이라이트 및 레이아웃 -->
+<style>
+/* 검색 결과 컨테이너 정돈 */
+.search-results {
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+/* 각 결과 항목(카드형) */
+.search-result {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1rem 0;
+  transition: all 0.2s ease;
+}
+
+.search-result:hover {
+  background-color: rgba(135, 206, 235, 0.05);
+  transform: translateY(-2px);
+}
+
+/* 제목 */
+.search-result h2,
+.search-result h3 {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+
+/* 요약 텍스트 */
+.search-result p {
+  margin: 0.4rem 0;
+  color: #444;
+}
+
+/* 🟡 하이라이트(검색어 부분 강조) */
+mark,
+.highlight {
+  background-color: #fff77e;
+  color: #000;
+  font-weight: 600;
+  padding: 0 2px;
+  border-radius: 0.15rem;
+}
+
+/* 검색창 영역 */
+.search-input {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.7rem 1rem;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 0.6rem;
+  border: 1.5px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #87CEEB;
+  box-shadow: 0 0 8px rgba(135, 206, 235, 0.4);
+  outline: none;
+}
+
+/* 검색 결과 개수 */
+.search-results-count {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .search-result {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .search-input {
+    width: 95%;
+  }
+}
+</style>
