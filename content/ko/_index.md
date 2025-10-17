@@ -9,6 +9,65 @@ design:
 
 sections:
 
+  # 🧭 헤더 (상단 메뉴 + 아이콘)
+  - block: markdown
+    content:
+      title: ""
+      text: |-
+        <!-- 상단 네비게이션 -->
+        <nav class="flex justify-between items-center w-full px-6 py-4 bg-white dark:bg-gray-900 shadow-sm">
+          <!-- 왼쪽 로고 -->
+          <a href="/" class="text-2xl font-bold text-gray-800 dark:text-gray-100 hover:text-sky-500 transition">HYEWON</a>
+
+          <!-- 가운데 메뉴 -->
+          <div class="hidden md:flex gap-8 text-gray-700 dark:text-gray-200 font-medium">
+            <a href="/about" class="hover:text-sky-400 transition">소개</a>
+            <a href="/projects" class="hover:text-sky-400 transition">프로젝트</a>
+            <a href="/dong" class="hover:text-sky-400 transition">동아리</a>
+            <a href="/jbnu" class="hover:text-sky-400 transition">전북대</a>
+            <a href="/contact" class="hover:text-sky-400 transition">연락처</a>
+          </div>
+
+          <!-- 오른쪽 아이콘 영역 -->
+          <div class="flex gap-3 items-center">
+            <!-- 검색 아이콘 -->
+            <button class="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-sky-400 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                   viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
+              </svg>
+            </button>
+
+            <!-- 다크모드 -->
+            <button class="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-sky-400 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                   viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 3v1m0 16v1m8.66-10H21M3 12H2m15.364 6.364l.707.707M5.636 5.636l.707.707m12.728 0l-.707.707M5.636 18.364l-.707.707" />
+              </svg>
+            </button>
+
+            <!-- 지구본 (언어 변경) -->
+            <button class="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-sky-400 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                   viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 010 20" />
+              </svg>
+            </button>
+
+            <!-- 메뉴 버튼 (모바일용) -->
+            <button class="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-sky-400 transition md:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                   viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+  # 🧍‍♀️ 프로필
   - block: resume-biography-3
     content:
       username: hyewon
