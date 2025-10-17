@@ -9,8 +9,8 @@
 favicon: icon.png
 
 appearance:
-  theme_day: ocean
-  theme_night: black
+  theme_day: custom
+  theme_night: custom
   font: classic
   font_size: M
 

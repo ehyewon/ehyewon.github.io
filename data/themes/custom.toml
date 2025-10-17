@@ -1,38 +1,38 @@
 # data/themes/custom.toml
-# 이혜원 포트폴리오 맞춤 테마 — 하늘톤 ↔ 남보라톤 전환
+# 🎨 이혜원 맞춤 감성 그라데이션 테마
 
-name = "HyeWon Custom Theme"
+name = "HyeWon Gradient Theme"
 
 [light]
   # 링크/버튼 색상
-  primary = "#38bdf8"          # 밝은 하늘색 (Tailwind sky-400)
+  primary = "#38bdf8"          # 하늘톤 블루
   link = "#38bdf8"
   link_hover = "#0ea5e9"
 
   # 메뉴 (상단바)
-  menu_primary = "#ffffff"     # 흰색 메뉴바 (깔끔하게)
-  menu_text = "#1f2937"        # 진회색 글씨
-  menu_text_active = "#0ea5e9" # 활성 시 파란색
+  menu_primary = "#ffffff"
+  menu_text = "#1f2937"
+  menu_text_active = "#0ea5e9"
   menu_title = "#0f172a"
 
-  # 페이지 배경 (하늘→흰 느낌)
-  background = "#b3e5fc"       # 💙 연한 하늘색 배경
+  # 배경 (하늘 → 흰색 그라데이션)
+  background = "#b3e5fc"
   home_section_odd = "#b3e5fc"
   home_section_even = "#ffffff"
 
 [dark]
   # 링크/버튼 색상
-  primary = "#7ec8e3"          # 밝은 남보라빛
+  primary = "#7ec8e3"
   link = "#7ec8e3"
   link_hover = "#93c5fd"
 
   # 메뉴 (상단바)
-  menu_primary = "#0f172a"     # 짙은 남색 (Tailwind slate-900)
-  menu_text = "#e5e7eb"        # 밝은 회색
-  menu_text_active = "#93c5fd" # 약간 더 밝은 블루
+  menu_primary = "#0f172a"
+  menu_text = "#e5e7eb"
+  menu_text_active = "#93c5fd"
   menu_title = "#ffffff"
 
-  # 페이지 배경 (남색 → 보라빛 느낌)
-  background = "#0f172a"       # 🌙 남색 톤 (배경)
-  home_section_odd = "#1e293b" # 남보라빛 블렌딩
+  # 배경 (남색 → 보라빛)
+  background = "#0f172a"
+  home_section_odd = "#1e293b"
   home_section_even = "#312e81"
