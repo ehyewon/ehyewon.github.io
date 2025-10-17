@@ -1,13 +1,25 @@
-/* 🌤️ 전체 사이트 배경: 하늘색 → 흰색 그라데이션 */
+/* 🌤️ 전체 사이트 그라데이션 배경 (SVG 뒤로 깔리게) */
 
-/* 일반(라이트모드) */
+/* HTML과 BODY에는 투명 배경 유지 */
 html, body {
-  background: linear-gradient(to bottom, #b3e5fc 0%, #ffffff 100%) !important;
-  min-height: 100%;
+  background: transparent !important;
+  position: relative;
+  z-index: 0;
 }
 
-/* 다크모드 */
-html[data-theme="dark"], 
-html[data-theme="dark"] body {
-  background: linear-gradient(to bottom, #0f172a 0%, #1e293b 100%) !important;
+/* 배경 레이어 생성 */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* ✅ 모든 요소 뒤로 보냄 */
+  background: linear-gradient(to bottom, #b3e5fc 0%, #ffffff 100%);
+}
+
+/* 다크모드용 */
+html[data-theme="dark"] body::before {
+  background: linear-gradient(to bottom, #0f172a 0%, #1e293b 100%);
 }
