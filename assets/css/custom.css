@@ -78,22 +78,34 @@ html[data-theme="dark"] .site-header i:hover {
 }
 
 /* 🌤 라이트모드 CTA 카드 */
-.cta-card {
+.cta-card, 
+.cta-card .card {
   background-color: #b3e5fc !important; /* 연한 하늘색 */
   color: #0f172a !important;
   transition: background-color 0.5s ease, color 0.3s ease !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
 
 /* 🌙 다크모드 CTA 카드 */
-html[data-theme="dark"] .cta-card {
-  background-color: #1e293b !important; /* 남색 계열 */
-  color: #e5e7eb !important; /* 밝은 회색 글씨 */
+html[data-theme="dark"] .cta-card, 
+html[data-theme="dark"] .cta-card .card {
+  background: linear-gradient(to bottom right, #1e293b, #0f172a) !important; /* 남색 그라데이션 */
+  color: #e5e7eb !important;
   transition: background-color 0.5s ease, color 0.3s ease !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.35);
 }
 
-/* 🌙 다크모드 제목 강조 (선택사항) */
+/* 🌙 다크모드 제목 강조 */
+html[data-theme="dark"] .cta-card h1,
 html[data-theme="dark"] .cta-card h2,
-html[data-theme="dark"] .cta-card h3,
-html[data-theme="dark"] .cta-card h4 {
+html[data-theme="dark"] .cta-card h3 {
   color: #ffffff !important;
 }
+
+/* 🌙 다크모드 본문 텍스트도 약간 밝게 */
+html[data-theme="dark"] .cta-card p {
+  color: #d1d5db !important;
+}
+
