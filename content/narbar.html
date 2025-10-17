@@ -1,8 +1,6 @@
-<button class="p-2 text-gray-600 dark:text-gray-300 hover:text-sky-400 transition">
-
 <header id="site-header" class="site-header w-full z-40 bg-white dark:bg-gray-900 shadow-sm">
   <nav class="container flex items-center justify-between py-4">
-    <!-- 왼쪽: 로고 -->
+    <!-- 왼쪽 로고 -->
     <a href="{{ site.BaseURL }}" class="flex items-center space-x-2 group">
       {{ $logo := resources.Get "media/logo.png" }}
       {{ if $logo }}
@@ -16,7 +14,13 @@
     <!-- 가운데 메뉴 -->
     <div class="hidden md:flex items-center gap-8 text-gray-700 dark:text-gray-200 font-medium">
       {{ range site.Menus.main }}
-      <a href="{{ .URL }}" class="hover:text-sky-400 transition">{{ .Name }}</a>
+        {{ $active := or (eq .URL .Page.RelPermalink) (strings.HasPrefix $.RelPermalink .URL) }}
+        <a href="{{ .URL }}"
+           class="transition
+                  hover:text-sky-400
+                  {{ if $active }} text-sky-600 font-semibold {{ end }}">
+          {{ .Name }}
+        </a>
       {{ end }}
     </div>
 
@@ -33,9 +37,12 @@
       </button>
 
       <!-- 언어 전환 -->
-      <a href="#" class="p-2 hover:text-sky-400 transition">
+      {{ if gt (len site.Languages) 1 }}
+      <a href="{{ if eq site.Language.Lang "ko" }}{{ site.Home.AllTranslations.Get "en" | relLangURL }}{{ else }}{{ site.Home.AllTranslations.Get "ko" | relLangURL }}{{ end }}"
+         class="p-2 hover:text-sky-400 transition">
         <i class="fas fa-globe text-lg"></i>
       </a>
+      {{ end }}
 
       <!-- 메뉴 버튼 (모바일용) -->
       <button class="p-2 hover:text-sky-400 transition md:hidden" data-target="menu">
