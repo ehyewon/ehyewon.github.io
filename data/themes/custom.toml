@@ -1,0 +1,9 @@
+[light]
+  primary = "#38bdf8"
+  link = "#38bdf8"
+  link_hover = "#0ea5e9"
+
+[dark]
+  primary = "#7ec8e3"
+  link = "#7ec8e3"
+  link_hover = "#93c5fd"
