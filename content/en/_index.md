@@ -172,7 +172,10 @@ sections:
         url: projects/
     design:
       card:
-        css_class: "bg-sky-100 text-slate-900 hover:bg-sky-200 dark:bg-gradient-to-br dark:from-[#1e293b] dark:to-[#0f172a] dark:text-gray-100 transition-all duration-500 ease-in-out"
+        css_class: "bg-sky-100 text-slate-900 hover:bg-sky-200 
+                    dark:bg-gradient-to-br dark:from-[#1e293b] dark:to-[#0f172a] dark:text-gray-100 
+                    dark:hover:from-[#312e81] dark:hover:to-[#4338ca] 
+                    transition-all duration-500 ease-in-out"
         css_style: "padding: 3rem 2rem;"
         button:
           css_class: "mt-6 px-6 py-3 rounded-lg font-semibold bg-white text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 ease-in-out"

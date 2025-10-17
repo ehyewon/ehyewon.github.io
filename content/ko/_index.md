@@ -168,7 +168,7 @@ sections:
   - block: cta-card
     demo: false
     content:
-      title: 프로젝트 보러가기♬
+      title: 프로젝트가 궁금하다면?
       text: |-
         지금까지 작업한 저의 여러 프로젝트들을 포트폴리오에서 만나보실 수 있습니다.
       button:
@@ -176,7 +176,10 @@ sections:
         url: projects/
     design:
       card:
-        css_class: "bg-sky-100 text-slate-900 hover:bg-sky-200 dark:bg-gradient-to-br dark:from-[#1e293b] dark:to-[#0f172a] dark:text-gray-100 transition-all duration-500 ease-in-out"
+        css_class: "bg-sky-100 text-slate-900 hover:bg-sky-200 
+                    dark:bg-gradient-to-br dark:from-[#1e293b] dark:to-[#0f172a] dark:text-gray-100 
+                    dark:hover:from-[#312e81] dark:hover:to-[#4338ca] 
+                    transition-all duration-500 ease-in-out"
         css_style: "padding: 3rem 2rem;"
         button:
           css_class: "mt-6 px-6 py-3 rounded-lg font-semibold bg-white text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 ease-in-out"
