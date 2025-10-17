@@ -1,0 +1,24 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Fuse.js 검색 옵션 오버라이드
+  if (window.searchOptions) {
+    window.searchOptions.keys = [
+      "title",
+      "summary",
+      "content",
+      "keywords",
+      "authors"
+    ];
+    window.searchOptions.threshold = 0.3;
+    window.searchOptions.ignoreLocation = true;
+  }
+
+  // 검색 인덱스 로드 후 실행 (지연 초기화 방지)
+  const checkFuse = setInterval(() => {
+    if (window.search && window.search.options) {
+      window.search.options = window.searchOptions;
+      clearInterval(checkFuse);
+    }
+  }, 300);
+});
+</script>
