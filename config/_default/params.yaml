@@ -13,7 +13,6 @@ appearance:
   theme_night: black
   font: classic
   font_size: M
-  custom_scss: ["scss/template.scss"]
 
 # SEO
 marketing:

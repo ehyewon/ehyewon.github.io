@@ -91,43 +91,6 @@ sections:
         size: medium
         shape: circle
 
-
-  # 🧭 헤더 아이콘 (검색, 다크모드, 언어 전환)
-  - block: markdown
-    content:
-      title: ""
-      text: |-
-        <div class="flex justify-end items-center gap-4 p-6">
-
-          <!-- 검색 아이콘 -->
-          <button class="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-sky-400 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                 viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
-            </svg>
-          </button>
-
-          <!-- 다크모드 토글 -->
-          <button class="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-sky-400 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                 viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 3v1m0 16v1m8.66-10H21M3 12H2m15.364 6.364l.707.707M5.636 5.636l.707.707m12.728 0l-.707.707M5.636 18.364l-.707.707" />
-            </svg>
-          </button>
-
-          <!-- 언어 변경 (지구본 아이콘) -->
-          <button class="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-sky-400 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                 viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 010 20" />
-            </svg>
-          </button>
-
-        </div>
-
 # 🖼️ 이미지 슬라이드 (홈 메인용)
   - block: markdown
     content:
