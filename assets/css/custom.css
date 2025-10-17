@@ -1,13 +1,17 @@
-/* 🌤️ 전체 사이트 그라데이션 배경 (SVG 뒤로 깔리게) */
+/* 🌤️ 전체 사이트 그라데이션 배경 + 네비게이션 hover 효과 */
 
-/* HTML과 BODY는 투명 유지 (실제 배경은 body::before에서 생성) */
+/* ================================
+   기본 설정: HTML & BODY
+================================ */
 html, body {
   background: transparent !important;
   position: relative;
   z-index: 0;
 }
 
-/* 💙 라이트모드: 하늘 → 흰색 */
+/* ================================
+   라이트모드 배경 (하늘 → 흰색)
+================================ */
 body::before {
   content: "";
   position: fixed;
@@ -15,13 +19,15 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -9999 !important; /* ✅ 모든 요소보다 뒤에 */
-  pointer-events: none !important; /* ✅ 클릭 방해 방지 */
+  z-index: -9999 !important;
+  pointer-events: none !important;
   background: linear-gradient(to bottom, #b3e5fc 0%, #ffffff 100%) !important;
   transition: background 0.5s ease;
 }
 
-/* 🌙 다크모드: 남색 → 보라빛 (흰 글씨 대비용) */
+/* ================================
+   다크모드 배경 (남색 → 보라빛)
+================================ */
 html[data-theme="dark"] body::before {
   background: linear-gradient(to bottom, #0f172a 0%, #312e81 100%) !important;
   transition: background 0.5s ease;
@@ -29,9 +35,11 @@ html[data-theme="dark"] body::before {
   pointer-events: none !important;
 }
 
-/* 🎨 네비게이션 메뉴 및 아이콘 hover 효과 */
+/* ================================
+   네비게이션 hover 효과
+================================ */
 
-/* 기본 상태 전환 */
+/* 기본 전환 */
 nav a,
 .navbar a,
 .site-header a,
@@ -41,7 +49,7 @@ nav a,
   transition: color 0.25s ease, transform 0.25s ease !important;
 }
 
-/* 🌤️ 마우스 올렸을 때 (라이트모드) */
+/* 🌤️ 라이트모드 hover */
 nav a:hover,
 .navbar a:hover,
 .site-header a:hover,
@@ -49,21 +57,21 @@ nav a:hover,
 .site-header svg:hover,
 .site-header i:hover {
   color: #38bdf8 !important; /* Tailwind sky-400 */
-  transform: scale(1.1);     /* 살짝 커지는 효과 */
+  transform: scale(1.1);
 }
 
-/* 🌙 다크모드 hover 효과 (조금 더 진한 하늘색) */
+/* 🌙 다크모드 hover */
 html[data-theme="dark"] nav a:hover,
 html[data-theme="dark"] .navbar a:hover,
 html[data-theme="dark"] .site-header a:hover,
 html[data-theme="dark"] .site-header button:hover,
 html[data-theme="dark"] .site-header svg:hover,
 html[data-theme="dark"] .site-header i:hover {
-  color: #7ec8e3 !important; /* 다크모드용 하늘색 */
+  color: #7ec8e3 !important;
   transform: scale(1.1);
 }
 
-/* 🌟 선택 사항: hover 시 약한 빛 효과 (은은한 Glow) */
+/* ✨ 은은한 glow 효과 */
 .site-header svg:hover,
 .site-header i:hover {
   filter: drop-shadow(0 0 6px rgba(135, 206, 250, 0.4));
