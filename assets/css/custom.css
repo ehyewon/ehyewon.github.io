@@ -76,3 +76,24 @@ html[data-theme="dark"] .site-header i:hover {
 .site-header i:hover {
   filter: drop-shadow(0 0 6px rgba(135, 206, 250, 0.4));
 }
+
+/* 🌤 라이트모드 CTA 카드 */
+.cta-card {
+  background-color: #b3e5fc !important; /* 연한 하늘색 */
+  color: #0f172a !important;
+  transition: background-color 0.5s ease, color 0.3s ease !important;
+}
+
+/* 🌙 다크모드 CTA 카드 */
+html[data-theme="dark"] .cta-card {
+  background-color: #1e293b !important; /* 남색 계열 */
+  color: #e5e7eb !important; /* 밝은 회색 글씨 */
+  transition: background-color 0.5s ease, color 0.3s ease !important;
+}
+
+/* 🌙 다크모드 제목 강조 (선택사항) */
+html[data-theme="dark"] .cta-card h2,
+html[data-theme="dark"] .cta-card h3,
+html[data-theme="dark"] .cta-card h4 {
+  color: #ffffff !important;
+}
