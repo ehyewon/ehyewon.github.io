@@ -1,0 +1,44 @@
+<header id="site-header" class="site-header w-full z-40 bg-white dark:bg-gray-900 shadow-sm">
+  <nav class="container flex items-center justify-between py-4">
+    <!-- 왼쪽: 로고 -->
+    <a href="{{ site.BaseURL }}" class="flex items-center space-x-2 group">
+      {{ $logo := resources.Get "media/logo.png" }}
+      {{ if $logo }}
+        <img src="{{ $logo.RelPermalink }}" alt="Logo" class="h-8 transition-transform group-hover:scale-105" />
+      {{ end }}
+      <span class="text-xl font-semibold text-gray-800 dark:text-gray-100 group-hover:text-sky-500 transition">
+        {{ site.Title }}
+      </span>
+    </a>
+
+    <!-- 가운데 메뉴 -->
+    <div class="hidden md:flex items-center gap-8 text-gray-700 dark:text-gray-200 font-medium">
+      {{ range site.Menus.main }}
+      <a href="{{ .URL }}" class="hover:text-sky-400 transition">{{ .Name }}</a>
+      {{ end }}
+    </div>
+
+    <!-- 오른쪽 아이콘 -->
+    <div class="flex items-center gap-4 text-gray-700 dark:text-gray-300">
+      <!-- 검색 -->
+      <button class="p-2 hover:text-sky-400 transition" data-target="search">
+        <i class="fas fa-search text-lg"></i>
+      </button>
+
+      <!-- 다크모드 -->
+      <button class="p-2 hover:text-sky-400 transition" data-target="dark-mode-toggle">
+        <i class="fas fa-moon text-lg"></i>
+      </button>
+
+      <!-- 언어 전환 -->
+      <a href="#" class="p-2 hover:text-sky-400 transition">
+        <i class="fas fa-globe text-lg"></i>
+      </a>
+
+      <!-- 메뉴 버튼 (모바일용) -->
+      <button class="p-2 hover:text-sky-400 transition md:hidden" data-target="menu">
+        <i class="fas fa-bars text-lg"></i>
+      </button>
+    </div>
+  </nav>
+</header>
