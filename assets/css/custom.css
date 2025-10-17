@@ -20,11 +20,26 @@ body::before {
   transition: background 0.5s ease;
 }
 
-/* 🌙 다크모드: 짙은 남색 → 보라빛 남색 (흰 글씨 대비용) */
-html[data-theme="dark"] body::before {
-  background: linear-gradient(to bottom, #0f172a 0%, #312e81 100%);
+/* 🌤️ 라이트 모드: 하늘색 배경 */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(to bottom, #b3e5fc 0%, #ffffff 100%);
   transition: background 0.5s ease;
 }
+
+/* 🌙 다크모드: 어두운 배경 (흰 글씨 대비용) */
+html[data-theme="dark"] body::before {
+  background: linear-gradient(to bottom, #0f172a 0%, #1e293b 100%) !important;
+  /* ↑ 진한 남색~짙은 회색. 흰색 글씨랑 대비 잘 됨 */
+  transition: background 0.5s ease;
+}
+
 
 /* 🎨 네비게이션 메뉴 및 아이콘 hover 효과 */
 
