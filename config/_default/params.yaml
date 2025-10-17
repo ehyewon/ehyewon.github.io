@@ -3,12 +3,11 @@
 # Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-#appearance:
- # mode: system
-  #color: #ff7b00
+
 favicon: icon.png
 
 appearance:
+  theme_user: custom
   theme_day: custom
   theme_night: custom
   font: classic
