@@ -9,7 +9,7 @@ html, body {
   z-index: 0;
 }
 
-/* 🌤️ 기본 라이트모드 배경 */
+/* 🌤️ 기본 라이트모드 배경
 body::before {
   content: "";
   position: fixed;
@@ -21,9 +21,9 @@ body::before {
   background: linear-gradient(to bottom, #b3e5fc 0%, #ffffff 100%) !important;
   transition: background 0.5s ease !important;
   pointer-events: none !important;
-}
+} */
 
-/* 🌙 다크모드 배경 강제 적용 (모든 테마 구조 커버) */
+/* 🌙 다크모드 배경 강제 적용 (모든 테마 구조 커버)
 html[data-theme="dark"] body::before,
 body[data-theme="dark"]::before,
 #top[data-theme="dark"]::before,
@@ -31,7 +31,7 @@ body[data-theme="dark"]::before,
 .dark body::before {
   background: linear-gradient(to bottom, #0f172a 0%, #312e81 100%) !important;
   transition: background 0.5s ease !important;
-}
+} */
 
 
 
