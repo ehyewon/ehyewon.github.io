@@ -1,33 +1,32 @@
+# data/themes/ocean.toml
+# 🎨 이혜원 맞춤 하늘/남보라 테마
+
+name = "Ocean (Modified for HyeWon)"
+
 [light]
-  # 링크/버튼 색상
-  primary = "#38bdf8"          # 하늘톤 블루
+  primary = "#38bdf8"
   link = "#38bdf8"
   link_hover = "#0ea5e9"
 
-  # 메뉴 (상단바)
   menu_primary = "#ffffff"
   menu_text = "#1f2937"
   menu_text_active = "#0ea5e9"
   menu_title = "#0f172a"
 
-  # 배경 (하늘 → 흰색 그라데이션)
   background = "#b3e5fc"
   home_section_odd = "#b3e5fc"
   home_section_even = "#ffffff"
 
 [dark]
-  # 링크/버튼 색상
   primary = "#7ec8e3"
   link = "#7ec8e3"
   link_hover = "#93c5fd"
 
-  # 메뉴 (상단바)
   menu_primary = "#0f172a"
   menu_text = "#e5e7eb"
   menu_text_active = "#93c5fd"
   menu_title = "#ffffff"
 
-  # 배경 (남색 → 보라빛)
   background = "#0f172a"
   home_section_odd = "#1e293b"
   home_section_even = "#312e81"
