@@ -28,9 +28,9 @@ body::before {
 /* ================================
    다크모드 배경 (남색 → 보라빛)
 ================================ */
-html[data-theme="dark"] body::before {
+[data-theme="dark"] body::before {
   background: linear-gradient(to bottom, #0f172a 0%, #312e81 100%) !important;
-  transition: background 0.5s ease;
+  transition: background 0.5s ease !important;
   z-index: -9999 !important;
   pointer-events: none !important;
 }
