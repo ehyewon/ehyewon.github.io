@@ -1,262 +1,38 @@
-<!-- layouts/partials/hooks/head-end/custom-style.html -->
 <style>
+/* ===========================
+   🔵 Header hover 스타일 (공통)
+   =========================== */
 
-/* 🧱 Hugo 기본 Tailwind 반응형 + 보조 스타일 */
-
-/* 이미지 자동 조절 */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-  transition: all 0.3s ease;
-}
-
-/* 컨테이너 (가운데 정렬 및 여백) */
-.container,
-section {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* 텍스트 정리 */
-p, h1, h2, h3, h4, h5 {
-  word-break: keep-all;
-  line-height: 1.6;
-  color: #222;
-}
-
-/* 제목 스타일 */
-h1 { font-weight: 700; }
-h2, h3 { font-weight: 600; }
-
-/* 버튼 기본 스타일 */
-button,
-a.button,
-.btn {
-  display: inline-block;
-  background: rgba(135, 206, 235, 0.2);
-  color: #222;
-  padding: 0.6rem 1.2rem;
-  border-radius: 0.6rem;
-  border: 2px solid transparent;
-  text-decoration: none;
+/* 네비게이션 전체 공통 */
+header#site-header .navbar a,
+header#site-header .navbar button,
+header#site-header .navbar label,
+header#site-header .navbar svg {
   transition: all 0.25s ease;
-  font-weight: 500;
   cursor: pointer;
 }
 
-/* 버튼 hover + glow */
-button:hover,
-a.button:hover,
-.btn:hover {
-  background-color: #87CEEB !important;
-  color: white !important;
-  transform: translateY(-2px);
-  box-shadow:
-    0 6px 14px rgba(135, 206, 235, 0.4),
-    0 0 10px rgba(135, 206, 235, 0.4),
-    inset 0 0 4px rgba(135, 206, 235, 0.2);
+/* hover 시 배경 + 글자색 */
+header#site-header .navbar a:hover,
+header#site-header .navbar button:hover,
+header#site-header .navbar label:hover {
+  background-color: rgba(135, 206, 250, 0.25); /* 연한 하늘색 배경 */
+  color: #00b7ff !important; /* 글자도 하늘빛 */
+  border-radius: 8px;
 }
 
-/* 버튼 클릭 시 */
-button:active,
-a.button:active,
-.btn:active {
-  transform: translateY(1px) scale(0.97);
-  box-shadow:
-    0 3px 8px rgba(135, 206, 235, 0.25),
-    0 0 8px rgba(135, 206, 235, 0.25);
+/* 아이콘 (지구본, 검색, 메뉴 등) hover 시 */
+header#site-header .navbar svg:hover {
+  color: #87CEEB !important; /* 연한 하늘색 아이콘 */
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px rgba(135, 206, 250, 0.4));
 }
 
-/* 네비게이션 메뉴 hover */
-header .navbar .nav-link {
-  transition: all 0.25s ease;
-  border-radius: 0.5rem;
-}
-
-header .navbar .nav-link:hover {
-  color: #87CEEB !important;
-  background: rgba(135, 206, 235, 0.15) !important;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(135, 206, 235, 0.25);
-}
-
-header .navbar .nav-link.active {
-  color: #87CEEB !important;
-}
-
-/* 카드류 공통 */
-[class*="card"],
-.article-card,
-.project-card,
-.publication-card {
-  background-color: white;
-  border-radius: 1rem;
-  transition: all 0.25s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-[class*="card"]:hover,
-.article-card:hover,
-.project-card:hover,
-.publication-card:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    0 16px 40px rgba(135, 206, 235, 0.3),
-    0 0 12px rgba(135, 206, 235, 0.25);
-}
-
-/* 아이콘 hover */
-svg:hover,
-i:hover {
-  fill: #87CEEB !important;
-  color: #87CEEB !important;
-  transform: scale(1.1);
-  transition: all 0.25s ease;
-}
-
-/* 다크모드 스타일 */
-.dark body {
-  background-color: #121212 !important;
-  color: #f2f2f2 !important;
-}
-
-.dark h1, .dark h2, .dark p {
-  color: #eaeaea !important;
-}
-
-.dark header .navbar .nav-link:hover {
-  background: rgba(135, 206, 235, 0.18) !important;
-  box-shadow:
-    0 6px 16px rgba(135, 206, 235, 0.5),
-    0 0 14px rgba(135, 206, 235, 0.6);
-}
-
-/* 카드 다크모드 */
-.dark [class*="card"],
-.dark .article-card,
-.dark .project-card {
-  background-color: #1e1e1e;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
-}
-
-/* 반응형 대응 */
-
-/* 📱 태블릿 이하 */
-@media (max-width: 768px) {
-  .hero,
-  .grid,
-  .flex {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  h1 { font-size: 1.8rem; }
-  h2 { font-size: 1.4rem; }
-  p  { font-size: 1rem; }
-
-  section {
-    padding: 1rem;
-  }
-
-  img {
-    border-radius: 0.4rem;
-  }
-}
-
-/* 📱 모바일 */
-@media (max-width: 480px) {
-  h1 { font-size: 1.5rem; }
-  h2 { font-size: 1.2rem; }
-  p  { font-size: 0.95rem; }
-}
-
-/* 💻 큰 화면 */
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1400px;
-  }
-}
-</style>
-
-<!-- 🟡 검색 결과 하이라이트 및 레이아웃 -->
-<style>
-/* 검색 결과 컨테이너 정돈 */
-.search-results {
-  margin-top: 1rem;
-  padding-bottom: 2rem;
-}
-
-/* 각 결과 항목(카드형) */
-.search-result {
-  border-bottom: 1px solid #e5e5e5;
-  padding: 1rem 0;
-  transition: all 0.2s ease;
-}
-
-.search-result:hover {
-  background-color: rgba(135, 206, 235, 0.05);
-  transform: translateY(-2px);
-}
-
-/* 제목 */
-.search-result h2,
-.search-result h3 {
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 0.3rem;
-}
-
-/* 요약 텍스트 */
-.search-result p {
-  margin: 0.4rem 0;
-  color: #444;
-}
-
-/* 🟡 하이라이트(검색어 부분 강조) */
-mark,
-.highlight {
-  background-color: #fff77e;
-  color: #000;
-  font-weight: 600;
-  padding: 0 2px;
-  border-radius: 0.15rem;
-}
-
-/* 검색창 영역 */
-.search-input {
-  width: 100%;
-  max-width: 600px;
-  padding: 0.7rem 1rem;
-  margin: 1rem auto;
-  display: block;
-  border-radius: 0.6rem;
-  border: 1.5px solid #ccc;
-  transition: all 0.3s ease;
-}
-
-.search-input:focus {
-  border-color: #87CEEB;
-  box-shadow: 0 0 8px rgba(135, 206, 235, 0.4);
-  outline: none;
-}
-
-/* 검색 결과 개수 */
-.search-results-count {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 1rem;
-}
-
-/* 모바일 반응형 */
-@media (max-width: 768px) {
-  .search-result {
-    padding: 0.8rem 0.5rem;
-  }
-
-  .search-input {
-    width: 95%;
-  }
+/* 다크모드 대응 */
+html[data-theme="dark"] header#site-header .navbar a:hover,
+html[data-theme="dark"] header#site-header .navbar button:hover,
+html[data-theme="dark"] header#site-header .navbar svg:hover {
+  background-color: rgba(135, 206, 250, 0.15);
+  color: #7ec8e3 !important;
 }
 </style>
