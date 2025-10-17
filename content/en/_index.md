@@ -172,7 +172,7 @@ sections:
         url: projects/
     design:
       card:
-        css_class: "rounded-3xl shadow-xl text-center bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 transition-all duration-300 ease-out"
+        css_class: "hover:bg-sky-200 hover:text-sky-700 transition"
         css_style: "padding: 3rem 2rem;"
         button:
           css_class: "mt-6 px-6 py-3 rounded-lg font-semibold bg-white text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 ease-in-out"

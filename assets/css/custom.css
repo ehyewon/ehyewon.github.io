@@ -47,3 +47,36 @@ html[data-theme="dark"] .site-header a:hover {
   color: #7ec8e3 !important; /* 다크모드에서도 부드럽게 */
 }
 
+/* 🎨 네비게이션 메뉴 + 아이콘 hover 효과 (HugoBlox용) */
+
+/* 기본 전환 효과 */
+nav a,
+.navbar a,
+.site-header a,
+.site-header button,
+.site-header svg,
+.site-header i {
+  transition: color 0.25s ease, transform 0.25s ease !important;
+}
+
+/* 마우스 올렸을 때 하늘색 전환 */
+nav a:hover,
+.navbar a:hover,
+.site-header a:hover,
+.site-header button:hover,
+.site-header svg:hover,
+.site-header i:hover {
+  color: #87CEEB !important;      /* 연한 하늘색 */
+  transform: scale(1.1);          /* 살짝 커지는 효과 (선택사항) */
+}
+
+/* 다크모드용 */
+html[data-theme="dark"] nav a:hover,
+html[data-theme="dark"] .navbar a:hover,
+html[data-theme="dark"] .site-header a:hover,
+html[data-theme="dark"] .site-header button:hover,
+html[data-theme="dark"] .site-header svg:hover,
+html[data-theme="dark"] .site-header i:hover {
+  color: #7ec8e3 !important;      /* 어두운 모드용 하늘색 */
+  transform: scale(1.1);
+}
