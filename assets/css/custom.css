@@ -1,0 +1,13 @@
+/* 🌤️ 전체 사이트 배경: 하늘색 → 흰색 그라데이션 */
+
+/* 일반(라이트모드) */
+html, body {
+  background: linear-gradient(to bottom, #b3e5fc 0%, #ffffff 100%) !important;
+  min-height: 100%;
+}
+
+/* 다크모드 */
+html[data-theme="dark"], 
+html[data-theme="dark"] body {
+  background: linear-gradient(to bottom, #0f172a 0%, #1e293b 100%) !important;
+}
