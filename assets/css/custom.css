@@ -9,9 +9,7 @@ html, body {
   z-index: 0;
 }
 
-/* ================================
-   라이트모드 배경 (하늘 → 흰색)
-================================ */
+/* 🌤️ 라이트모드: 하늘 → 흰색 */
 body::before {
   content: "";
   position: fixed;
@@ -22,13 +20,15 @@ body::before {
   z-index: -9999 !important;
   pointer-events: none !important;
   background: linear-gradient(to bottom, #b3e5fc 0%, #ffffff 100%) !important;
-  transition: background 0.5s ease;
+  transition: background 0.5s ease !important;
 }
 
-/* ================================
-   다크모드 배경 (남색 → 보라빛)
-================================ */
-[data-theme="dark"] body::before {
+/* 🌙 다크모드: 남색 → 보라빛 */
+/* ✅ HugoBlox는 html, body, #top 중 어디에나 data-theme을 넣을 수 있어서 다 커버해야 함 */
+html[data-theme="dark"] body::before,
+body[data-theme="dark"]::before,
+#top[data-theme="dark"]::before,
+.page-wrapper[data-theme="dark"]::before {
   background: linear-gradient(to bottom, #0f172a 0%, #312e81 100%) !important;
   transition: background 0.5s ease !important;
   z-index: -9999 !important;
