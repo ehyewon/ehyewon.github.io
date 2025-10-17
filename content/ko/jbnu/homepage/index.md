@@ -7,6 +7,12 @@ type: jbnu
 layout: single
 featured: true
 show_author: false
+keywords:
+  - 이혜원
+  - 전북대학교
+  - jbnu
+  - AI
+  - 포트폴리오
 
 image:
   filename: featured.jpg
