@@ -23,3 +23,27 @@ body::before {
 html[data-theme="dark"] body::before {
   background: linear-gradient(to bottom, #0f172a 0%, #1e293b 100%);
 }
+
+/* 🎨 네비게이션 메뉴 hover 효과 (HugoBlox 기본 메뉴용) */
+
+/* 일반(라이트모드) */
+nav a,
+.navbar a,
+.site-header a {
+  transition: color 0.3s ease !important;
+}
+
+/* 마우스 올렸을 때 하늘색 전환 */
+nav a:hover,
+.navbar a:hover,
+.site-header a:hover {
+  color: #87CEEB !important;  /* 연한 하늘색 */
+}
+
+/* 다크모드 */
+html[data-theme="dark"] nav a:hover,
+html[data-theme="dark"] .navbar a:hover,
+html[data-theme="dark"] .site-header a:hover {
+  color: #7ec8e3 !important; /* 다크모드에서도 부드럽게 */
+}
+
