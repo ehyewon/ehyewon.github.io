@@ -1,38 +1,11 @@
 <style>
-/* ===========================
-   🔵 Header hover 스타일 (공통)
-   =========================== */
-
-/* 네비게이션 전체 공통 */
-header#site-header .navbar a,
-header#site-header .navbar button,
-header#site-header .navbar label,
-header#site-header .navbar svg {
-  transition: all 0.25s ease;
-  cursor: pointer;
-}
-
-/* hover 시 배경 + 글자색 */
 header#site-header .navbar a:hover,
 header#site-header .navbar button:hover,
-header#site-header .navbar label:hover {
-  background-color: rgba(135, 206, 250, 0.25); /* 연한 하늘색 배경 */
-  color: #00b7ff !important; /* 글자도 하늘빛 */
-  border-radius: 8px;
-}
-
-/* 아이콘 (지구본, 검색, 메뉴 등) hover 시 */
+header#site-header .navbar label:hover,
 header#site-header .navbar svg:hover {
-  color: #87CEEB !important; /* 연한 하늘색 아이콘 */
-  transform: scale(1.15);
-  filter: drop-shadow(0 0 6px rgba(135, 206, 250, 0.4));
-}
-
-/* 다크모드 대응 */
-html[data-theme="dark"] header#site-header .navbar a:hover,
-html[data-theme="dark"] header#site-header .navbar button:hover,
-html[data-theme="dark"] header#site-header .navbar svg:hover {
-  background-color: rgba(135, 206, 250, 0.15);
-  color: #7ec8e3 !important;
+  background-color: rgba(135, 206, 250, 0.25) !important;
+  color: #00b7ff !important;
+  border-radius: 8px !important;
+  transition: all 0.25s ease !important;
 }
 </style>

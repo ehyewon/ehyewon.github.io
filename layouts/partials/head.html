@@ -1,0 +1,8 @@
+{{/* layouts/partials/head.html */}}
+
+{{ partial "hooks/head-start.html" . }}
+
+<!-- ✅ 커스텀 스타일 강제 삽입 -->
+{{ partial "hooks/head-end/custom-style.html" . }}
+
+{{ partial "head.html" (dict "Page" . "theme" site.Params.theme) }}
