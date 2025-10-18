@@ -14,10 +14,11 @@ sections:
     content:
       username: hyewon
       text: ""
-      button:
-        text: 이력서 다운받기
-        url: /uploads/resume.pdf
-        css_class: "hover:bg-sky-200 hover:text-sky-700 transition"
+    button:
+      text: 이력서 다운받기
+      url: /uploads/resume.pdf
+      css_class: "px-6 py-3 rounded-xl bg-gradient-to-r from-amber-700 to-rose-700 text-white font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+
     design:
       css_class: dark
       background:
