@@ -45,6 +45,12 @@ image:
     <div>
     <img src="jeju4.jpg" alt="제주도4" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
   </div>
+    <div>
+    <img src="jeju5.jpg" alt="제주도5" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+  </div>
+    <div>
+    <img src="jeju6.jpg" alt="제주도6" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+  </div>
 </div>
 
 ---

@@ -45,6 +45,12 @@ Although the heat was tough to endure, looking back, even that struggle became a
   <div>
     <img src="jeju4.jpg" alt="Jeju 4" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
   </div>
+    <div>
+    <img src="jeju5.jpg" alt="Jeju 3" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+  </div>
+  <div>
+    <img src="jeju6.jpg" alt="Jeju 4" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+  </div>
 </div>
 
 ---
