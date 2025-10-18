@@ -31,14 +31,15 @@ sections:
         size: medium
         shape: circle
 
-# 🖼️ Image Slider (Main Home)
+# 🖼️ Image Slider (Home Main)
   - block: markdown
     content:
       title: ""
       subtitle: ""
       text: |-
-        <!-- Image Slider (home main with text overlay) -->
+        <!-- Image Slider (for Home Main, with text overlay) -->
          <div class="relative w-full max-w-7xl mx-auto mt-8 overflow-hidden rounded-2xl shadow-xl">
+          <!-- Slide container (❗Only one should exist) -->
          <div class="flex transition-transform duration-700 ease-in-out" id="slider">
           
           <!-- Slide 1 -->
@@ -46,7 +47,7 @@ sections:
             <img src="/images/slide1.jpg" class="w-full h-[550px] object-cover opacity-70" alt="Slide 1">
             <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
               <h2 class="text-5xl font-extrabold mb-2 drop-shadow-lg">Web Service Design</h2>
-              <p class="text-xl font-medium">Practical and stylish</p>
+              <p class="text-xl font-medium">Practical and Aesthetic</p>
             </div>
           </div>
 
@@ -64,7 +65,7 @@ sections:
             <img src="/images/slide3.jpg" class="w-full h-[550px] object-cover opacity-70" alt="Slide 3">
             <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
               <h2 class="text-5xl font-extrabold mb-2 drop-shadow-lg">Database</h2>
-              <p class="text-xl font-medium">Managing and organizing data</p>
+              <p class="text-xl font-medium">Handling and organizing data</p>
             </div>
           </div>
 
@@ -73,12 +74,22 @@ sections:
             <img src="/images/slide4.jpg" class="w-full h-[550px] object-cover opacity-70" alt="Slide 4">
             <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
               <h2 class="text-5xl font-extrabold mb-2 drop-shadow-lg">AI</h2>
-              <p class="text-xl font-medium">Leading the era of Artificial Intelligence</p>
+              <p class="text-xl font-medium">Leading the age of intelligence</p>
             </div>
           </div>
+
+          <!-- ✅ Slide 5 (Java version) -->
+          <div class="relative w-full flex-shrink-0">
+            <img src="/images/slide5.jpg" class="w-full h-[550px] object-cover opacity-70" alt="Slide 5">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+              <h2 class="text-5xl font-extrabold mb-2 drop-shadow-lg">Java</h2>
+              <p class="text-xl font-medium">Learning the essence of OOP</p>
+            </div>
+          </div>
+
         </div>
 
-        <!-- Navigation Buttons -->
+        <!-- Navigation buttons -->
         <button onclick="prevSlide()" class="absolute top-1/2 left-5 transform -translate-y-1/2 bg-black/40 text-white px-4 py-2 rounded-full hover:bg-black/70 text-2xl">‹</button>
         <button onclick="nextSlide()" class="absolute top-1/2 right-5 transform -translate-y-1/2 bg-black/40 text-white px-4 py-2 rounded-full hover:bg-black/70 text-2xl">›</button>
 
@@ -88,34 +99,37 @@ sections:
           <button class="w-3 h-3 bg-white/40 rounded-full" onclick="goToSlide(1)"></button>
           <button class="w-3 h-3 bg-white/40 rounded-full" onclick="goToSlide(2)"></button>
           <button class="w-3 h-3 bg-white/40 rounded-full" onclick="goToSlide(3)"></button>
+          <button class="w-3 h-3 bg-white/40 rounded-full" onclick="goToSlide(4)"></button>
         </div>
         </div>
 
          <script>
          let currentSlide = 0;
-         const totalSlides = 4;
+         const totalSlides = 5; // ✅ 5 slides total
 
         function showSlide(index) {
           const slider = document.getElementById('slider');
           if (index < 0) index = totalSlides - 1;
           if (index >= totalSlides) index = 0;
           slider.style.transform = `translateX(-${index * 100}%)`;
-          currentSlide = index;
+           currentSlide = index;
 
+          // Indicator color update
           document.querySelectorAll('.absolute.bottom-4 button').forEach((dot, i) => {
             dot.classList.toggle('bg-white/80', i === index);
             dot.classList.toggle('bg-white/40', i !== index);
           });
-        }
+         }
 
-        function nextSlide() { showSlide(currentSlide + 1); }
-        function prevSlide() { showSlide(currentSlide - 1); }
-        function goToSlide(i) { showSlide(i); }
+         function nextSlide() { showSlide(currentSlide + 1); }
+         function prevSlide() { showSlide(currentSlide - 1); }
+         function goToSlide(i) { showSlide(i); }
 
-        setInterval(() => { nextSlide(); }, 5000);
-        </script>
+         setInterval(() => { nextSlide(); }, 5000);
+         </script>
     design:
       columns: '1'
+
 
   - block: markdown
     content:

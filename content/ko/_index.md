@@ -79,6 +79,16 @@ sections:
               <p class="text-xl font-medium">AI 시대를 이끄는</p>
             </div>
           </div>
+
+          <!-- ✅ Slide 5 (새로 추가됨) -->
+          <div class="relative w-full flex-shrink-0">
+            <img src="/images/slide5.jpg" class="w-full h-[550px] object-cover opacity-70" alt="Slide 5">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+              <h2 class="text-5xl font-extrabold mb-2 drop-shadow-lg">자바</h2>
+              <p class="text-xl font-medium">객체지향의 핵심</p>
+            </div>
+          </div>
+
         </div>
 
         <!-- 좌우 버튼 -->
@@ -91,12 +101,13 @@ sections:
           <button class="w-3 h-3 bg-white/40 rounded-full" onclick="goToSlide(1)"></button>
           <button class="w-3 h-3 bg-white/40 rounded-full" onclick="goToSlide(2)"></button>
           <button class="w-3 h-3 bg-white/40 rounded-full" onclick="goToSlide(3)"></button>
-          </div>
+          <button class="w-3 h-3 bg-white/40 rounded-full" onclick="goToSlide(4)"></button>
+        </div>
         </div>
 
          <script>
          let currentSlide = 0;
-         const totalSlides = 4;
+         const totalSlides = 5; // ✅ 총 5장으로 변경
 
         function showSlide(index) {
           const slider = document.getElementById('slider');
@@ -105,11 +116,11 @@ sections:
           slider.style.transform = `translateX(-${index * 100}%)`;
            currentSlide = index;
 
-        // 인디케이터 색 변경
-        document.querySelectorAll('.absolute.bottom-4 button').forEach((dot, i) => {
+          // 인디케이터 색 변경
+          document.querySelectorAll('.absolute.bottom-4 button').forEach((dot, i) => {
             dot.classList.toggle('bg-white/80', i === index);
-           dot.classList.toggle('bg-white/40', i !==     index);
-           });
+            dot.classList.toggle('bg-white/40', i !== index);
+          });
          }
 
          function nextSlide() { showSlide(currentSlide + 1); }
@@ -120,6 +131,7 @@ sections:
          </script>
     design:
       columns: '1'
+
 
   - block: markdown
     content:
