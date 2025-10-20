@@ -198,3 +198,6 @@ sections:
 
 
 ---
+
+<!-- ✅ 검색 인덱싱용 키워드 (사이트 전역 검색 노출 트리거) -->
+이혜원 | 전북대학교 | JBNU | 인공지능학부 | AI | 포트폴리오 | Lee Hyewon | Jeonbuk National University
