@@ -4,8 +4,11 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: 내 정보
+  - parent: 내 정보
     url: /
+    weight: 10
+  - parent: 쁘미정도
+    url: /ppeumi
     weight: 10
 
   - name: 관심사
