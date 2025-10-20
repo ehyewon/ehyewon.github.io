@@ -72,6 +72,13 @@ features:
     enable: false
   privacy_pack:
     enable: false
+  search:
+    provider: wowchemy
+    algolia:
+      app_id: ''
+      api_key: ''
+      index_name: ''
+      show_logo: false
   map:
     coordinates: 'mapnik'
     api_key: ''

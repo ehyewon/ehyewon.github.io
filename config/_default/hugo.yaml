@@ -72,5 +72,3 @@ sitemap:
 params:
   custom_css:
     - css/custom.css
-search:
-  provider: wowchemy
