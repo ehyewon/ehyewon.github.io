@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "About Me"
 date: 2025-10-20
 type: about
 layout: single

@@ -1,5 +1,5 @@
 ---
-title: "소개"
+title: "내 소개"
 date: 2025-10-20
 type: about
 layout: single
