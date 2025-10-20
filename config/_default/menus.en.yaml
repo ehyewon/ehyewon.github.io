@@ -4,8 +4,13 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: My Information
-    url: /
+  - parent: About Me
+    name: Introduction
+    url: /introduce
+    weight: 10
+  - parent: About Me
+    name: About Ppemi
+    url: /ppeumi
     weight: 10
 
   - name: Interest
