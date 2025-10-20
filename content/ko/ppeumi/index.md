@@ -33,7 +33,7 @@ css_class: ppeumi-gallery
   <img src="p7.jpg" alt="쁘미 사진7" class="ppeumi-card" onclick="openModal(this)">
   <img src="p8.jpg" alt="쁘미 사진8" class="ppeumi-card" onclick="openModal(this)">
   <img src="p9.jpg" alt="쁘미 사진9" class="ppeumi-card" onclick="openModal(this)">
-  <img src="/p10.jpg" alt="쁘미 사진10" class="ppeumi-card" onclick="openModal(this)">
+  <img src="p10.jpg" alt="쁘미 사진10" class="ppeumi-card" onclick="openModal(this)">
   <img src="p11.jpg" alt="쁘미 사진11" class="ppeumi-card" onclick="openModal(this)">
   <img src="p12.jpg" alt="쁘미 사진12" class="ppeumi-card" onclick="openModal(this)">
   <img src="p13.jpg" alt="쁘미 사진13" class="ppeumi-card" onclick="openModal(this)">
