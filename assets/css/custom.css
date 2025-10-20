@@ -77,6 +77,41 @@ html[data-theme="dark"] .site-header i:hover {
   filter: drop-shadow(0 0 6px rgba(135, 206, 250, 0.4));
 }
 
+/* ================================
+   🌊 현재 메뉴(active) 밑줄 표시
+================================ */
+
+/* 기본 상태: 현재 페이지 메뉴 밑줄 */
+.navbar a.active,
+nav a.active,
+.site-header a.active {
+  position: relative;
+  color: #0284c7 !important; /* 살짝 진한 하늘색 (Tailwind sky-600) */
+  font-weight: 600;
+}
+
+/* 밑줄 효과 */
+.navbar a.active::after,
+nav a.active::after,
+.site-header a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #38bdf8, #0ea5e9);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* 다크모드에서도 보이게 */
+html[data-theme="dark"] .navbar a.active::after,
+html[data-theme="dark"] nav a.active::after,
+html[data-theme="dark"] .site-header a.active::after {
+  background: linear-gradient(to right, #7dd3fc, #60a5fa);
+}
+
 /* 🐾 쁘미 사진첩 스타일 */
 .ppeumi-grid {
   display: grid;
