@@ -9,6 +9,9 @@ name_pronunciation: ''
 first_name: 이
 last_name: 혜원
 
+authors:
+  - 이혜원
+
 # Is this the primary user of the site?
 superuser: true
 
