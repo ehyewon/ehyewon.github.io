@@ -1,4 +1,4 @@
-{{- $.Scratch.Add "index" slice -}}
+{{- $.Scratch.Add "index" (slice) -}}
 {{- range .Site.RegularPages -}}
   {{- $.Scratch.Add "index" (dict 
     "title" .Title 

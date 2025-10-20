@@ -50,11 +50,7 @@ footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 disableAliases: true
 outputs:
-  home: [HTML, RSS, JSON, sitemap]        # ✅ JSON 추가 (중요)
-  section: [HTML, RSS, JSON]
-  taxonomy: [HTML, RSS, JSON]
-  term: [HTML, RSS, JSON]
-  page: [HTML, RSS, JSON]
+  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
 imaging:
   resampleFilter: lanczos
   quality: 90
@@ -76,3 +72,5 @@ sitemap:
 params:
   custom_css:
     - css/custom.css
+search:
+  provider: wowchemy
