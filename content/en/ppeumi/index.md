@@ -13,11 +13,12 @@ css_class: ppeumi-gallery
 
 ### 🐶 Profile  
 Name: Ppeumi  
-Born: 2016  
+Born: 2016
+gender: ♀
 Weight: Under 2kg  
 Breed: Maltese  
 Likes: Sleeping  
-Features: Sleeps about 20 hours a day, tiny and adorable  
+Features: Sleeps about 20 hours a day, tiny and adorable, very cute
 
 ---
 
