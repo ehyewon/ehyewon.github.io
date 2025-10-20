@@ -5,7 +5,8 @@
 
 main:
   - parent: 내 정보
-    url: /
+    name: 자기소개
+    url: /introduce
     weight: 10
   - parent: 내 정보
     name: 쁘미 정보
