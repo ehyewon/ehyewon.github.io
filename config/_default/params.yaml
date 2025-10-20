@@ -66,19 +66,18 @@ locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
 
+search:
+  provider: wowchemy
+  results_per_page: 10
+  show_date: false
+
 # Site features
 features:
   math:
     enable: false
   privacy_pack:
     enable: false
-  search:
-    provider: wowchemy
-    algolia:
-      app_id: ''
-      api_key: ''
-      index_name: ''
-      show_logo: false
+
   map:
     coordinates: 'mapnik'
     api_key: ''
