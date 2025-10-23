@@ -22,7 +22,14 @@ marketing:
     org_name: '전북대학교'
     description: '전북대학교 이혜원 학생의 개인 학술 웹사이트입니다.'
     image: "uploads/avatar.jpg"
-   keywords: ['전북대', '이혜원', '학생', '학술', '연구', '컴퓨터인공지능학부', 'JBNU', 'Lee HyeWon', '전북대학교', '컴퓨터', '전북대 이혜원']
+    keywords:
+    - 이혜원
+    - 전북대학교
+    - jbnu
+    - jeonbuk National University
+    - 컴퓨터인공지능학부
+    - 포트폴리오
+    - AI
   analytics:
     google_analytics: ''
     baidu_tongji: ''
